@@ -1,5 +1,9 @@
 # Corte & Sabor
 
+Este repositorio contiene proyectos web independientes.
+
+## Corte & Sabor
+
 Sitio web de **Corte & Sabor**, una carnicería artesanal. El proyecto reúne una página de presentación y varias pantallas para explorar cortes, consultar ofertas y gestionar un pedido.
 
 ## Páginas
@@ -22,3 +26,9 @@ No se requiere instalación ni compilación. Abre `sitio-web/index.html` en un n
 - HTML
 - Tailwind CSS mediante CDN
 - Google Fonts y Material Symbols
+
+## Nexus Kick Channel
+
+Página promocional para un canal de Kick con una identidad visual oscura y acentos neón. Incluye la página HTML, la guía de diseño y una captura de referencia en `nexus-kick-channel/`.
+
+Abre `nexus-kick-channel/code.html` en un navegador para ver la página. No requiere instalación ni compilación.

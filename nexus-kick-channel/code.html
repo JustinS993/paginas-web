@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@800;900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#670020", "on-error": "#690005", "error": "#ffb4ab", "inverse-on-surface": "#2e3132", "on-secondary": "#00363d", "on-tertiary-container": "#c10043", "error-container": "#93000a", "surface-container": "#1d2021", "primary-container": "#53fc18", "outline-variant": "#3d4b35", "surface-container-high": "#272a2b", "inverse-primary": "#1c6d00", "on-tertiary-fixed": "#400011", "surface": "#111415", "on-primary-fixed": "#042100", "on-primary-container": "#1d7000", "on-primary-fixed-variant": "#135200", "surface-bright": "#373a3b", "on-surface": "#e1e3e4", "on-tertiary-fixed-variant": "#910030", "tertiary": "#fff7f6", "surface-variant": "#323536", "on-secondary-container": "#00616d", "primary-fixed-dim": "#44e400", "primary": "#ebffdc", "secondary-fixed-dim": "#00daf3", "on-primary": "#0b3900", "on-secondary-fixed-variant": "#004f58", "on-secondary-fixed": "#001f24", "on-error-container": "#ffdad6", "surface-dim": "#111415", "secondary": "#bdf4ff", "on-background": "#e1e3e4", "on-surface-variant": "#bbccb0", "surface-container-low": "#191c1d", "surface-container-lowest": "#0c0f10", "tertiary-fixed": "#ffd9dc", "outline": "#86957c", "primary-fixed": "#7bff51", "secondary-fixed": "#9cf0ff", "secondary-container": "#00e3fd", "tertiary-container": "#ffd1d5", "inverse-surface": "#e1e3e4", "surface-container-highest": "#323536", "surface-tint": "#44e400", "background": "#111415", "tertiary-fixed-dim": "#ffb2ba" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-lg": "1.25rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem" }, fontFamily: { "headline-lg": ["Montserrat"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "label-badge": ["Montserrat"], "headline-md": ["Montserrat"], "label-lg": ["Montserrat"], "headline-xl": ["Montserrat"], "headline-xl-mobile": ["Montserrat"], "label-md": ["Montserrat"] }, fontSize: { "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-badge": ["10px", { "lineHeight": "12px", "letterSpacing": "0.12em", "fontWeight": "900" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "900" }], "headline-xl-mobile": ["30px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "900" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "800" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.85);}}.animate-pulse-beacon{animation:pulse-dot 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;}</style></head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_4px_20px_rgba(0,0,0,0.6)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="flex items-center gap-space-xs shrink-0"><img alt="Kick Streamer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTs9_R_8PfZhrSA88T74DJj1LO1IMRYCNWu4Gh1UpKaIUQbLxDZdAdM8aTtBZeHZH_JNgBf57rUaz6I2WKfUqrm963Iv4tTblJVfFxqGE8NMYcXw305K1CqfylGwIJ2k8NH5ADGl5Dqa4sRf9NWGG-Z4rzTzo-lLX1jKJbYjKV_0Wq6V7uf9ZlL9savvoOwtbYVksjbGaWsiVawh2DCDpHb71d07TBGPmszn1PCEVL2CJvB242QeM"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface truncate">NEXUS_TV</span></div><div class="flex items-center gap-space-xs"><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-DEFAULT bg-primary-container/15 text-primary-container font-label-badge text-label-badge tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse-beacon"></span>LIVE ON KICK</span><span class="hidden font-label-md text-label-md text-on-surface-variant">Ver En Vivo</span></div></div></div></div><div class="flex items-center gap-space-sm shrink-0"><button class="min-h-[44px] px-space-md py-space-xs bg-primary-container hover:bg-primary-fixed-dim active:scale-95 text-on-primary-container font-label-lg text-label-lg rounded-DEFAULT uppercase tracking-wider transition-all duration-150 shadow-[0_0_12px_rgba(83,252,24,0.35)] flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[18px] mr-1">person_add</span>Seguir</button><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/60 shadow-[0_0_8px_rgba(83,252,24,0.4)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaYSTA0_9zDuzt_rb8DRt9iZ14ejulgByRuArytBXtboxAe4Xk5dm5BTb9K3xBl1CZmZTywd8KzD9oEc4cJdtHjsZEsVdaA1Pf_Wze0v2AoGe425yfDIVFoCg9amj73txBohlsFGoqseH7AJRV_9VzEe23Y3VykRDqGFex9FsYITMgqMOvVQTNuJcjRfvzcrmYy574nmGiIFt23jk6zcxTJtOE-uw4MGsJuQ3rS7SOfal3gwcR-SI"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-container rounded-full ring-2 ring-surface"></span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile gap-space-xl">
+<style>
+  :root {
+    --hub-bg: #0c100f;
+    --hub-surface: #151a18;
+    --hub-raised: #1b211e;
+    --hub-raised-2: #232a26;
+    --hub-border: rgba(255, 255, 255, .075);
+    --hub-muted: #a0aaa3;
+    --hub-green: #53fc18;
+    --hub-cyan: #7de8f4;
+  }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+  body {
+    width: 100%;
+    background:
+      radial-gradient(ellipse at 50% -22%, rgba(83,252,24,.08), transparent 42%),
+      var(--hub-bg);
+    color: #eff3ef;
+    font-family: "Inter", sans-serif;
+    overscroll-behavior-y: auto;
+  }
+  body, button, a { -webkit-tap-highlight-color: transparent; }
+  button, a { transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+  :focus-visible { outline: 2px solid var(--hub-green); outline-offset: 3px; }
+  ::selection { color: #0d160b; background: var(--hub-green); }
+
+  body > header {
+    height: 76px;
+    padding-top: 0;
+    border-bottom: 1px solid var(--hub-border);
+    background: rgba(12,16,15,.9);
+    box-shadow: 0 8px 28px rgba(0,0,0,.2);
+  }
+  body > header > div {
+    width: min(1240px, calc(100% - 48px));
+    height: 100%;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+  body > header img[alt="Kick Streamer Logo"] { width: 38px; height: 38px; border-radius: 9px; }
+  body > header button {
+    min-height: 42px;
+    padding-inline: 18px;
+    border: 1px solid rgba(83,252,24,.55);
+    border-radius: 5px;
+    background: var(--hub-green);
+    box-shadow: 0 0 18px rgba(83,252,24,.16);
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+  body > header button:hover { background: #72ff42; box-shadow: 0 0 24px rgba(83,252,24,.28); }
+  body > header .rounded-full { width: 37px; height: 37px; }
+
+  main {
+    width: min(1240px, 100%);
+    align-self: center;
+    padding: 98px 24px 54px;
+    background: transparent;
+  }
+  main > div.flex.flex-col.w-full {
+    display: grid;
+    grid-template-columns: minmax(0, 1.42fr) minmax(320px, .88fr);
+    grid-template-areas:
+      "profile profile"
+      "actions actions"
+      "preview goal"
+      "preview perks"
+      "schedule socials"
+      "schedule setup";
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main > div > section {
+    min-width: 0;
+    margin: 0 !important;
+    border: 1px solid var(--hub-border);
+    border-radius: 10px;
+    background: var(--hub-surface);
+    box-shadow: 0 10px 30px rgba(0,0,0,.14);
+  }
+  main > div > section:nth-of-type(1) { grid-area: profile; overflow: hidden; }
+  main > div > section:nth-of-type(2) { grid-area: actions; border: 0; background: transparent; box-shadow: none; }
+  main > div > section:nth-of-type(3) { grid-area: preview; overflow: hidden; }
+  main > div > section:nth-of-type(4) { grid-area: goal; }
+  main > div > section:nth-of-type(5) { grid-area: perks; }
+  main > div > section:nth-of-type(6) { grid-area: schedule; overflow: hidden; }
+  main > div > section:nth-of-type(7) { grid-area: socials; }
+  main > div > section:nth-of-type(8) { grid-area: setup; }
+
+  main > div > section:nth-of-type(1) > div:first-child {
+    height: 178px;
+    background:
+      radial-gradient(ellipse at 68% 48%, rgba(83,252,24,.16), transparent 38%),
+      linear-gradient(115deg, #111714, #202b23 52%, #101512);
+  }
+  main > div > section:nth-of-type(1) > div:first-child::after {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(12,16,15,.12), transparent 70%);
+    content: "";
+    pointer-events: none;
+  }
+  main > div > section:nth-of-type(1) > div:first-child svg { opacity: .32; }
+  main > div > section:nth-of-type(1) > div:first-child img { object-position: center 38%; }
+  main > div > section:nth-of-type(1) > div:first-child > div.absolute { border: 1px solid var(--hub-border); }
+  main > div > section:nth-of-type(1) > div:first-child span.bg-primary-container { box-shadow: 0 0 14px rgba(83,252,24,.18); }
+  main > div > section:nth-of-type(1) > div.relative.px-space-md {
+    padding: 0 24px 23px;
+    background: var(--hub-surface);
+  }
+  main > div > section:nth-of-type(1) > div.relative.px-space-md > div:first-child img {
+    width: 92px;
+    height: 92px;
+    border: 4px solid var(--hub-surface);
+    border-radius: 12px;
+    box-shadow: 0 7px 22px rgba(0,0,0,.34);
+  }
+  main > div > section:nth-of-type(1) h1 {
+    font-size: clamp(25px, 3vw, 34px);
+    letter-spacing: -.045em;
+    line-height: 1.05;
+  }
+  main > div > section:nth-of-type(1) p { max-width: 720px; color: #b7c0b9; line-height: 1.7; }
+  main > div > section:nth-of-type(1) .rounded.bg-surface-container-high,
+  main > div > section:nth-of-type(1) .rounded.bg-primary-container\/10 {
+    border: 1px solid var(--hub-border);
+    border-radius: 4px;
+    background-color: var(--hub-raised);
+  }
+
+  main > div > section:nth-of-type(2) > a:first-child {
+    min-height: 62px;
+    padding: 12px 18px;
+    border: 1px solid rgba(83,252,24,.48);
+    border-radius: 7px;
+    background: linear-gradient(100deg, #53fc18, #75ff43);
+    box-shadow: 0 5px 22px rgba(83,252,24,.14);
+  }
+  main > div > section:nth-of-type(2) > a:first-child:hover { box-shadow: 0 7px 28px rgba(83,252,24,.25); transform: translateY(-1px); }
+  main > div > section:nth-of-type(2) .grid > a {
+    min-height: 98px;
+    padding: 15px 17px;
+    border: 1px solid var(--hub-border);
+    border-radius: 7px;
+    background: var(--hub-surface);
+  }
+  main > div > section:nth-of-type(2) .grid > a:hover,
+  main > div > section:nth-of-type(7) a:hover { border-color: rgba(83,252,24,.35); background: var(--hub-raised); transform: translateY(-1px); }
+
+  main > div > section:nth-of-type(3) > div:first-child {
+    min-height: 45px;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--hub-border);
+    background: var(--hub-surface);
+  }
+  main > div > section:nth-of-type(3) > div:first-child h2 { font-size: 13px; letter-spacing: .09em; }
+  main > div > section:nth-of-type(3) > div:first-child > span { font-size: 10px; }
+  main > div > section:nth-of-type(3) > div:nth-child(2) { background: #080a09; }
+  main > div > section:nth-of-type(3) > div:nth-child(2) img { filter: saturate(.92); }
+  main > div > section:nth-of-type(3) > div:nth-child(3) { padding: 12px 15px 14px; background: #111613; }
+  main > div > section:nth-of-type(3) #simulated-chat { min-height: 112px; height: 112px; }
+
+  main > div > section:nth-of-type(4) { padding: 17px; background: linear-gradient(140deg, #1b211e, #171c19); }
+  main > div > section:nth-of-type(4) > div:first-child { gap: 12px; }
+  main > div > section:nth-of-type(4) > div:first-child > div { gap: 9px; }
+  main > div > section:nth-of-type(4) .h-3 { height: 8px; background: #0e120f; }
+  main > div > section:nth-of-type(4) .h-3 > div { background: linear-gradient(90deg, #3ec50d, #53fc18); box-shadow: 0 0 13px rgba(83,252,24,.28); }
+  main > div > section:nth-of-type(4) > div:last-child { flex-wrap: wrap; gap: 5px 12px; }
+
+  main > div > section:nth-of-type(5) { padding: 17px; }
+  main > div > section:nth-of-type(5) h2,
+  main > div > section:nth-of-type(6) h2,
+  main > div > section:nth-of-type(7) h2 { margin-top: 5px; font-size: 18px; letter-spacing: -.025em; }
+  main > div > section:nth-of-type(5) .grid { gap: 9px; }
+  main > div > section:nth-of-type(5) .grid > div {
+    min-height: 132px;
+    padding: 13px;
+    border: 1px solid var(--hub-border);
+    border-radius: 7px;
+    background: #1a201d;
+  }
+  main > div > section:nth-of-type(5) .grid > div > div:first-child { width: 34px; height: 34px; border: 1px solid var(--hub-border); background: #101512; }
+  main > div > section:nth-of-type(5) p { line-height: 1.55; }
+
+  main > div > section:nth-of-type(6) h2,
+  main > div > section:nth-of-type(7) h2 { margin-bottom: 2px; }
+  main > div > section:nth-of-type(6) > div:first-child { padding: 17px 17px 12px; }
+  main > div > section:nth-of-type(6) .w-full.rounded-xl {
+    border: 0;
+    border-top: 1px solid var(--hub-border);
+    border-radius: 0;
+    box-shadow: none;
+  }
+  main > div > section:nth-of-type(6) .w-full.rounded-xl > div {
+    min-height: 73px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--hub-border);
+    background: var(--hub-surface);
+  }
+  main > div > section:nth-of-type(6) .w-full.rounded-xl > div:nth-child(even) { background: #181e1b; }
+  main > div > section:nth-of-type(6) .w-full.rounded-xl > div:last-child { border-bottom: 0; }
+  main > div > section:nth-of-type(6) .w-10.h-10 { border-radius: 6px; font-size: 12px; }
+
+  main > div > section:nth-of-type(7) { padding: 17px; }
+  main > div > section:nth-of-type(7) .grid { gap: 8px; }
+  main > div > section:nth-of-type(7) .grid > a {
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid var(--hub-border);
+    border-radius: 7px;
+    background: #1a201d;
+  }
+  main > div > section:nth-of-type(7) .grid > a:first-child { min-height: 75px; }
+  main > div > section:nth-of-type(7) .grid > a:not(:first-child) { min-height: 62px; }
+  main > div > section:nth-of-type(8) { padding: 17px; }
+  main > div > section:nth-of-type(8) > div:first-child { gap: 10px; }
+  main > div > section:nth-of-type(8) .grid > div { min-height: 76px; border: 1px solid var(--hub-border); background: #111613; }
+
+  body > nav.fixed.bottom-0 {
+    right: 50%;
+    bottom: 16px;
+    left: auto;
+    width: max-content;
+    max-width: calc(100% - 32px);
+    padding: 6px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 10px;
+    background: rgba(16,20,18,.94);
+    box-shadow: 0 12px 36px rgba(0,0,0,.4);
+    transform: translateX(50%);
+  }
+  body > nav.fixed.bottom-0 > div { height: 57px; gap: 5px; padding: 0; }
+  body > nav.fixed.bottom-0 a {
+    min-width: 100px;
+    min-height: 44px;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0 14px;
+    border-radius: 6px;
+    color: #abb5ad;
+    font-size: 11px;
+    letter-spacing: .06em;
+    text-decoration: none;
+    filter: none;
+    transform: none;
+  }
+  body > nav.fixed.bottom-0 a[aria-current="page"] { background: rgba(83,252,24,.1); color: var(--hub-green); box-shadow: inset 0 0 0 1px rgba(83,252,24,.14); }
+  body > nav.fixed.bottom-0 a:hover { background: rgba(255,255,255,.06); color: white; }
+  body > nav.fixed.bottom-0 a span.material-symbols-outlined { font-size: 19px; }
+  body > nav.fixed.bottom-0 a span.font-label-md { margin: 0; font-size: 10px; }
+
+  @media (max-width: 900px) {
+    main { padding: 94px 18px 48px; }
+    main > div.flex.flex-col.w-full {
+      grid-template-columns: minmax(0, 1.12fr) minmax(285px, .88fr);
+      grid-template-areas:
+        "profile profile"
+        "actions actions"
+        "preview preview"
+        "goal perks"
+        "schedule schedule"
+        "socials setup";
+      gap: 16px;
+    }
+    main > div > section:nth-of-type(4),
+    main > div > section:nth-of-type(5) { align-self: stretch; }
+    main > div > section:nth-of-type(5) .grid { grid-template-columns: 1fr; }
+    main > div > section:nth-of-type(5) .grid > div { min-height: 0; flex-direction: row; align-items: flex-start; gap: 11px; }
+  }
+
+  @media (max-width: 620px) {
+    html { scroll-padding-top: 76px; }
+    body > header { height: 68px; }
+    body > header > div { width: calc(100% - 28px); }
+    body > header img[alt="Kick Streamer Logo"] { width: 34px; height: 34px; }
+    body > header button { min-height: 39px; padding-inline: 12px; font-size: 10px; }
+    body > header .rounded-full { width: 33px; height: 33px; }
+    main { padding: 82px 12px 104px; }
+    main > div.flex.flex-col.w-full {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    main > div > section { width: 100%; }
+    main > div > section:nth-of-type(1) > div:first-child { height: 135px; }
+    main > div > section:nth-of-type(1) > div.relative.px-space-md { padding: 0 14px 17px; }
+    main > div > section:nth-of-type(1) > div.relative.px-space-md > div:first-child img { width: 76px; height: 76px; }
+    main > div > section:nth-of-type(1) h1 { font-size: 26px; }
+    main > div > section:nth-of-type(1) p { font-size: 12px; }
+    main > div > section:nth-of-type(1) .font-headline-md { font-size: 17px; }
+    main > div > section:nth-of-type(2) > a:first-child { min-height: 58px; }
+    main > div > section:nth-of-type(2) .grid > a { min-height: 92px; padding: 12px; }
+    main > div > section:nth-of-type(3) > div:first-child { min-height: 43px; padding-inline: 11px; }
+    main > div > section:nth-of-type(3) > div:first-child h2 { font-size: 11px; }
+    main > div > section:nth-of-type(3) > div:nth-child(3) { padding: 10px; }
+    main > div > section:nth-of-type(4) { padding: 13px; }
+    main > div > section:nth-of-type(4) > div:first-child > span { font-size: 19px; white-space: nowrap; }
+    main > div > section:nth-of-type(4) > div:last-child { font-size: 10px; }
+    main > div > section:nth-of-type(5),
+    main > div > section:nth-of-type(7),
+    main > div > section:nth-of-type(8) { padding: 14px; }
+    main > div > section:nth-of-type(5) h2,
+    main > div > section:nth-of-type(6) h2,
+    main > div > section:nth-of-type(7) h2 { font-size: 16px; }
+    main > div > section:nth-of-type(5) .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    main > div > section:nth-of-type(5) .grid > div { display: flex; flex-direction: column; gap: 8px; padding: 10px; }
+    main > div > section:nth-of-type(5) .grid > div p { font-size: 10px; line-height: 1.45; }
+    main > div > section:nth-of-type(6) > div:first-child { padding: 14px 12px 10px; }
+    main > div > section:nth-of-type(6) .w-full.rounded-xl > div { min-height: 68px; gap: 8px; padding: 10px; }
+    main > div > section:nth-of-type(6) .w-full.rounded-xl > div > div:first-child { min-width: 0; gap: 8px; }
+    main > div > section:nth-of-type(6) .w-full.rounded-xl > div > div:first-child > div { min-width: 0; }
+    main > div > section:nth-of-type(6) .font-label-lg { font-size: 11px; line-height: 1.4; }
+    main > div > section:nth-of-type(6) .font-body-sm { font-size: 10px; }
+    main > div > section:nth-of-type(6) .w-10.h-10 { width: 36px; height: 36px; flex: 0 0 auto; font-size: 10px; }
+    main > div > section:nth-of-type(6) .font-mono { flex: 0 0 auto; font-size: 10px; }
+    main > div > section:nth-of-type(7) .grid > a { padding: 9px; }
+    main > div > section:nth-of-type(7) .grid > a:first-child { gap: 8px; }
+    main > div > section:nth-of-type(7) .grid > a:first-child .font-label-lg { font-size: 11px; }
+    main > div > section:nth-of-type(7) .grid > a:first-child .font-body-sm { font-size: 9px; }
+    main > div > section:nth-of-type(7) .grid > a:not(:first-child) { gap: 7px; }
+    main > div > section:nth-of-type(7) .grid > a:not(:first-child) > div:first-child { width: 31px; height: 31px; flex: 0 0 auto; }
+    main > div > section:nth-of-type(7) .grid > a:not(:first-child) .font-label-md { font-size: 9px; }
+    main > div > section:nth-of-type(7) .grid > a:not(:first-child) .font-body-sm { font-size: 9px; }
+    main > div > section:nth-of-type(8) .grid > div { padding: 6px; }
+    main > div > section:nth-of-type(8) .grid .font-label-md { font-size: 9px; }
+    body > nav.fixed.bottom-0 { bottom: 8px; max-width: calc(100% - 20px); }
+    body > nav.fixed.bottom-0 > div { height: 53px; }
+    body > nav.fixed.bottom-0 a { min-width: 0; gap: 5px; padding: 0 10px; }
+    body > nav.fixed.bottom-0 a span.font-label-md { font-size: 9px; }
+  }
+
+  @media (max-width: 370px) {
+    body > header img[alt="Kick Streamer Logo"] { display: none; }
+    body > header > div { width: calc(100% - 20px); }
+    main > div > section:nth-of-type(2) .grid > a { padding: 9px; }
+    main > div > section:nth-of-type(2) .grid .font-label-lg { font-size: 11px; }
+    main > div > section:nth-of-type(5) .grid { grid-template-columns: 1fr; }
+    main > div > section:nth-of-type(5) .grid > div { flex-direction: row; }
+    body > nav.fixed.bottom-0 a { gap: 4px; padding: 0 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.title = "NEXUS — Streamer de Kick | Gaming en vivo";
+    document.querySelector("body > nav")?.setAttribute("aria-label", "Navegación del canal");
+
+    const sections = [...document.querySelectorAll("main > div > section")];
+    const sectionTargets = {
+      "ver-en-vivo": sections[0],
+      horarios: sections[5],
+      "beneficios-sub": sections[4],
+      redes: sections[6]
+    };
+    Object.entries(sectionTargets).forEach(([key, section]) => {
+      if (section) section.id = key;
+      const link = document.querySelector(`nav [data-path="${key}"]`);
+      if (link) link.href = `#${key}`;
+    });
+
+    if ("IntersectionObserver" in window) {
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          Object.entries(sectionTargets).forEach(([key, section]) => {
+            const link = document.querySelector(`nav [data-path="${key}"]`);
+            if (link) {
+              if (section === entry.target) link.setAttribute("aria-current", "page");
+              else link.removeAttribute("aria-current");
+            }
+          });
+        });
+      }, { rootMargin: "-25% 0px -60% 0px" });
+      Object.values(sectionTargets).forEach((section) => {
+        if (section) sectionObserver.observe(section);
+      });
+    }
+
+    document.querySelectorAll('a[href="https://kick.com"]').forEach((link) => {
+      link.href = "https://kick.com/Nexus";
+    });
+
+    const followButton = document.querySelector("body > header button");
+    if (followButton) {
+      followButton.addEventListener("click", () => {
+        window.open("https://kick.com/Nexus", "_blank", "noopener,noreferrer");
+      });
+    }
+
+    const fullscreenButton = document.querySelector('button[aria-label="Pantalla completa"]');
+    const player = fullscreenButton?.closest("section")?.querySelector(".aspect-video");
+    fullscreenButton?.addEventListener("click", async () => {
+      try {
+        if (!document.fullscreenElement && player?.requestFullscreen) await player.requestFullscreen();
+        else if (document.fullscreenElement) await document.exitFullscreen();
+      } catch (error) {
+        console.error("No se pudo cambiar el modo de pantalla completa.", error);
+      }
+    });
+    document.addEventListener("fullscreenchange", () => {
+      if (fullscreenButton) {
+        fullscreenButton.setAttribute("aria-label", document.fullscreenElement ? "Salir de pantalla completa" : "Pantalla completa");
+      }
+    });
+  });
+</script>
+<!-- CHANNEL HERO PROFILE CARD -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-xl">
+<!-- Ambient Neon Cyber Backing Graphic -->
+<div class="relative w-full h-36 bg-gradient-to-r from-surface-container-lowest via-surface-container-high to-surface-container-lowest flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-container via-transparent to-transparent"></div>
+<!-- Tech circuit subtle ambient wire lines -->
+<svg class="absolute inset-0 w-full h-full text-primary-container/10 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<path d="M 0 30 Q 80 90 200 40 T 400 70" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M 50 120 L 150 70 L 280 110 L 380 40" fill="none" stroke="currentColor" stroke-dasharray="6,4" stroke-width="1.2"></path>
+<circle cx="280" cy="110" fill="currentColor" r="3"></circle>
+<circle cx="150" cy="70" fill="currentColor" r="2.5"></circle>
+</svg>
+<!-- Live Floating Status Tag -->
+<div class="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 shadow-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse-beacon"></span>
+<span class="font-label-badge text-label-badge text-primary-container tracking-widest uppercase">EN VIVO KICK</span>
+</div>
+<!-- Top viewer count live pill -->
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-lowest/90 text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[15px]" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<span class="font-label-md text-label-md text-on-surface">4.8K viewers</span>
+</div>
+</div>
+<!-- Creator Info Bar -->
+<div class="relative px-space-md pb-space-lg pt-0 flex flex-col gap-space-sm -mt-11">
+<div class="flex items-end justify-between">
+<div class="relative">
+<img alt="Nexus Avatar" class="w-20 h-20 rounded-xl object-cover shadow-[0_0_18px_rgba(83,252,24,0.3)] bg-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaYSTA0_9zDuzt_rb8DRt9iZ14ejulgByRuArytBXtboxAe4Xk5dm5BTb9K3xBl1CZmZTywd8KzD9oEc4cJdtHjsZEsVdaA1Pf_Wze0v2AoGe425yfDIVFoCg9amj73txBohlsFGoqseH7AJRV_9VzEe23Y3VykRDqGFex9FsYITMgqMOvVQTNuJcjRfvzcrmYy574nmGiIFt23jk6zcxTJtOE-uw4MGsJuQ3rS7SOfal3gwcR-SI"/>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-[9px] font-black uppercase tracking-wider">PRO</span>
+</div>
+<div class="flex flex-col items-end text-right">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Audiencia Total</span>
+<span class="font-headline-md text-headline-md text-on-surface">142.5K <span class="text-primary-container font-body-sm text-body-sm lowercase">follows</span></span>
+</div>
+</div>
+<div class="flex flex-col mt-1">
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">NEXUS</h1>
+<span class="material-symbols-outlined text-primary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">@NexusLive</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Streamer partner oficial en Kick Gaming. Tryhard, risas y la comunidad más activa de habla hispana.</p>
+</div>
+<!-- Category Badges -->
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">GTA RP</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Valorant Radiant</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary-container font-label-md text-label-md">Just Chatting</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-label-md text-label-md">1080p60 0% Delay</span>
+</div>
+</div>
+</section>
+<!-- CALLS TO ACTION (MAIN STREAM HUB) -->
+<section class="flex flex-col gap-space-xs">
+<!-- Big Neon CTA: Ver Stream -->
+<a class="relative group w-full py-3.5 px-space-md rounded-lg bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container flex items-center justify-between shadow-[0_0_22px_rgba(83,252,24,0.45)] active:scale-[0.98] transition-all" href="https://kick.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<div class="flex flex-col text-left">
+<span class="font-headline-md text-headline-md uppercase tracking-wide leading-none text-on-primary-container">VER EN DIRECTO</span>
+<span class="font-label-badge text-[10px] text-on-primary-container/85 uppercase tracking-wider mt-0.5">Calidad Ultra HD • Audio Directo</span>
+</div>
+</div>
+<div class="flex items-center justify-center w-8 h-8 rounded bg-on-primary-container/15">
+<span class="material-symbols-outlined text-[20px] text-on-primary-container">arrow_forward</span>
+</div>
+</a>
+<!-- Secondary dual buttons: Sub & Discord -->
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<a class="p-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright flex flex-col justify-center items-start text-left shadow-sm active:scale-95 transition-all" href="#sub-perks">
+<div class="flex items-center gap-1.5 text-primary-container mb-1">
+<span class="material-symbols-outlined text-[19px]">stars</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase">95/5 REVENUE</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface uppercase">Subscribirse</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Sin anuncios + Emotes</span>
+</a>
+<a class="p-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright flex flex-col justify-center items-start text-left shadow-sm active:scale-95 transition-all" href="#comunidad">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="material-symbols-outlined text-[19px]">forum</span>
+<span class="font-label-badge text-label-badge text-secondary uppercase">25K Miembros</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface uppercase">Discord VIP</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Voz &amp; Sorteos activos</span>
+</a>
+</div>
+</section>
+<!-- INTERACTIVE STREAM PREVIEW & MOCK FAST CHAT -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">smart_display</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Preview Transmisión</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-container">timer</span>
+        04h 22m en directo
+      </span>
+</div>
+<!-- Video & Simulated Chat Container -->
+<div class="w-full rounded-xl overflow-hidden bg-surface-container-lowest shadow-lg flex flex-col">
+<!-- Simulated Player Screen -->
+<div class="relative w-full aspect-video bg-surface-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover opacity-85" data-alt="High quality dynamic gaming stream screen capture of Valorant competitive game in first person shooter view with glowing cyber green UI overlay, kill feed highlights, custom facecam frame in corner and esports stadium atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWYpWiQDLLcYJlDV8qm514KsI8y3rt4Z4kmWHiZWGmRfRz6ToPcCizjDGP1h0rJZ3yoLS0xDAQ29GewwQnmzMKMge0GZnfYveWQ7C9vd4l6E6L-xaFxkgeI7RmzqCeLcdiKX2oLLEefTf-l8fnf52HIEK_F97HGA7Vt1vpS8mTdiqfnIa8sd8pwJtRVgw4QMnLbxlJapo2s2O6sYvc5_aT_VFh9q6RRon5Nh5mg-hXKUbc2LDPDgE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Overlaid Game Feed Tag -->
+<div class="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-badge text-[10px] text-on-surface uppercase">VALORANT RANKED - IMMORTAL 3 LOBBY</span>
+</div>
+<button aria-label="Pantalla completa" class="absolute bottom-2 right-2 w-7 h-7 rounded bg-surface-container-lowest/80 text-on-surface flex items-center justify-center hover:text-primary-container" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+</div>
+<!-- Kick Chat Simulation Terminal -->
+<div class="p-space-sm bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-badge text-[10px] uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-container">chat</span> Chat Kick en Tiempo Real
+          </span>
+<span class="font-label-badge text-[10px] text-primary-container">Modo Rápido: ON</span>
+</div>
+<!-- Dynamic Simulated Messages List -->
+<div class="flex flex-col gap-1.5 h-28 overflow-hidden text-body-sm font-body-sm" id="simulated-chat">
+<div class="flex items-start gap-1.5 leading-snug">
+<span class="px-1 py-0.2 rounded bg-primary-container text-on-primary-container font-label-badge text-[9px] font-black shrink-0">SUB 12M</span>
+<span class="text-secondary font-semibold shrink-0">Kev_Rider:</span>
+<span class="text-on-surface truncate">Esa última ronda con Operator fue una locura total 🔥🔥</span>
+</div>
+<div class="flex items-start gap-1.5 leading-snug">
+<span class="px-1 py-0.2 rounded bg-surface-container-high text-primary-container font-label-badge text-[9px] font-bold shrink-0">VIP</span>
+<span class="text-primary-container font-semibold shrink-0">CyberGamer99:</span>
+<span class="text-on-surface truncate">kickEmoteNexusPog ¡Lanza ya el sorteo de perifericos!</span>
+</div>
+<div class="flex items-start gap-1.5 leading-snug">
+<span class="px-1 py-0.2 rounded bg-surface-bright text-on-surface-variant font-label-badge text-[9px] shrink-0">VIEWER</span>
+<span class="text-on-surface-variant font-semibold shrink-0">ValoMaster_es:</span>
+<span class="text-on-surface truncate">¿A qué hora empieza la maratón de terror el miércoles?</span>
+</div>
+<div class="flex items-start gap-1.5 leading-snug">
+<span class="px-1 py-0.2 rounded bg-primary-container text-on-primary-container font-label-badge text-[9px] font-black shrink-0">SUB 6M</span>
+<span class="text-secondary font-semibold shrink-0">Laura_Pixel:</span>
+<span class="text-on-surface truncate">GG clutch merecidísimo hermano!! 🟢🟢🟢</span>
+</div>
+</div>
+<!-- Chat Input Mock Bar -->
+<div class="flex items-center gap-1.5 pt-1">
+<div class="flex-1 py-1.5 px-2.5 rounded bg-surface-container-high text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span>Enviar mensaje en Kick...</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container">mood</span>
+</div>
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider" type="button">
+            Chat
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SUB GOAL BAR (MARATÓN 24H) -->
+<section class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">flag</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wide text-on-surface">Meta de Subs de la Comunidad</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary-container">845 <span class="font-body-sm text-body-sm text-on-surface-variant">/ 1000</span></span>
+</div>
+<!-- Progress Track Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-fixed-dim via-primary-container to-secondary-container shadow-[0_0_12px_rgba(83,252,24,0.6)]" style="width: 84.5%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary-container">celebration</span>
+        Recompensa: <strong>Maratón 24H Ininterrumpida</strong>
+</span>
+<span class="text-primary-container font-semibold">Faltan 155</span>
+</div>
+</section>
+<!-- POR QUÉ SEGUIR EN KICK (PERKS & ADVANTAGES) -->
+<section class="flex flex-col gap-space-sm" id="sub-perks">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-widest">Ventajas de la Plataforma</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface">¿Por qué seguir en Kick?</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Perk Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">featured_seasonal_and_gifts</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Sorteos Top</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">Sorteos semanales de skins de Valorant, teclados mecánicos y periféricos pro.</p>
+</div>
+</div>
+<!-- Perk Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">sentiment_very_satisfied</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Chat Libre</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">Sin censura exagerada ni algoritmos intrusivos. Libertad y buen ambiente.</p>
+</div>
+</div>
+<!-- Perk Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">add_reaction</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Emotes HD</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">+45 emotes animados e insignias evolutivas según tu antigüedad en el chat.</p>
+</div>
+</div>
+<!-- Perk Card 4 -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Streams 8+ Horas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">Contenido diario sin interrupciones forzadas, torneos con la comunidad y lobbies abiertos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- HORARIO SEMANAL DE TRANSMISIONES -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-widest">Calendario Oficial</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface">Horarios Semanales</h2>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-high text-primary-container font-label-md text-label-md uppercase">20:00 CET</span>
+</div>
+<!-- Table List Style -->
+<div class="w-full rounded-xl overflow-hidden bg-surface-container shadow-md flex flex-col">
+<!-- Monday -->
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-primary-container/15 text-primary-container font-headline-md text-headline-md flex items-center justify-center">LUN</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Ranking Valorant Radiant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tryhard con pros y calibración</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-mono">20:00</span>
+</div>
+<!-- Tuesday -->
+<div class="p-space-md bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-surface-container-lowest text-on-surface-variant font-headline-md text-headline-md flex items-center justify-center">MAR</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">GTA V Roleplay Élite</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Historias y persecuciones policiales</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-mono">20:00</span>
+</div>
+<!-- Wednesday -->
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-secondary-container/15 text-secondary font-headline-md text-headline-md flex items-center justify-center">MIÉ</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Noche de Terror &amp; Screamers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Juegos indie con pulsómetro en directo</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-mono">21:30</span>
+</div>
+<!-- Thursday -->
+<div class="p-space-md bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-surface-container-lowest text-on-surface-variant font-headline-md text-headline-md flex items-center justify-center">JUE</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Just Chatting &amp; Reacciones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Viendo clips del Reddit y memes</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-mono">20:00</span>
+</div>
+<!-- Friday (Special Highlight) -->
+<div class="p-space-md bg-primary-container/10 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center">VIE</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Especial Comunidad + Giveaways</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary-container font-label-badge text-[9px] font-black uppercase">SORTEO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Salas personalizadas y drops de periféricos</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-mono font-bold">19:00</span>
+</div>
+<!-- Saturday -->
+<div class="p-space-md bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded bg-surface-container-lowest text-on-surface-variant font-headline-md text-headline-md flex items-center justify-center">SÁB</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Maratón Weekend sin Límites</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Variedad extrema con invitados especiales</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-mono">20:00</span>
+</div>
+</div>
+</section>
+<!-- REDES SOCIALES Y MATRIZ MULTIPLATAFORMA -->
+<section class="flex flex-col gap-space-sm" id="comunidad">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-widest">Ecosistema Nexus</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface">Conéctate en Redes</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Discord Card Full width -->
+<a class="col-span-2 p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between shadow-sm" href="https://discord.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-[#5865F2]">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Servidor Oficial de Discord</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Anuncios de streams, memes y avisos de sorteos</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]">chevron_right</span>
+</a>
+<!-- TikTok -->
+<a class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-2.5" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded bg-surface-container-lowest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">TikTok</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Clips diarios (380K)</span>
+</div>
+</a>
+<!-- Twitter / X -->
+<a class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-2.5" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Twitter / X</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Noticias y avisos</span>
+</div>
+</a>
+<!-- YouTube -->
+<a class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-2.5" href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded bg-surface-container-lowest flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">video_library</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">YouTube</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">VODs y resúmenes</span>
+</div>
+</a>
+<!-- Kick Direct Profile -->
+<a class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-2.5" href="https://kick.com" rel="noopener noreferrer" target="_blank">
+<div class="w-9 h-9 rounded bg-surface-container-lowest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Kick.com/Nexus</span>
+<span class="font-body-sm text-[11px] text-primary-container truncate">Perfil oficial</span>
+</div>
+</a>
+</div>
+</section>
+<!-- STREAMER HARDWARE & SETUP HIGHLIGHT CARDS -->
+<section class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-space-sm shadow-md mb-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">memory</span>
+<h3 class="font-label-lg text-label-lg uppercase text-on-surface">Setup de Transmisión</h3>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">PC DUAL SYSTEM</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded bg-surface-container flex flex-col items-center">
+<span class="font-label-badge text-[10px] text-primary-container uppercase">GPU</span>
+<span class="font-label-md text-label-md text-on-surface mt-0.5">RTX 4090</span>
+<span class="text-[10px] font-body-sm text-on-surface-variant">24GB VRAM</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col items-center">
+<span class="font-label-badge text-[10px] text-secondary uppercase">AUDIO</span>
+<span class="font-label-md text-label-md text-on-surface mt-0.5">Shure SM7B</span>
+<span class="text-[10px] font-body-sm text-on-surface-variant">GoXLR Pro</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col items-center">
+<span class="font-label-badge text-[10px] text-primary-container uppercase">MONITOR</span>
+<span class="font-label-md text-label-md text-on-surface mt-0.5">360Hz OLED</span>
+<span class="text-[10px] font-body-sm text-on-surface-variant">0.03ms G-Sync</span>
+</div>
+</div>
+</section>
+<!-- MICRO-INTERACTIONS SCRIPT -->
+<script>
+    (function initChatSimulation() {
+      const chatContainer = document.getElementById('simulated-chat');
+      if (!chatContainer) return;
+
+      const mockUsers = [
+        { name: 'X_GhostGamer', tag: 'VIP', color: 'text-primary-container', bg: 'bg-surface-container-high' },
+        { name: 'Dany_Sniper', tag: 'SUB 3M', color: 'text-secondary', bg: 'bg-primary-container text-on-primary-container' },
+        { name: 'Elena_Kick', tag: 'SUB 18M', color: 'text-primary-container', bg: 'bg-primary-container text-on-primary-container' },
+        { name: 'NexusFanBoy', tag: 'VIEWER', color: 'text-on-surface-variant', bg: 'bg-surface-bright' },
+        { name: 'SlayerEsports', tag: 'VIP', color: 'text-primary-container', bg: 'bg-surface-container-high' }
+      ];
+
+      const mockPhrases = [
+        '¡Vaya tiro a la cabeza en A long!',
+        'GGWP que partidaza estamos viviendo 🟢🟢',
+        'nexusEmoteFire nexusEmoteFire',
+        '¿El sorteo del teclado es para todos o solo subs?',
+        'Hoy se trasnocha fuerte gente!!',
+        '¡Dale Nexus que llegamos a la meta de subs!',
+        'Sonido 10/10 hoy en el directo 🔥',
+        'El mejor canal de Kick sin dudas'
+      ];
+
+      let msgIndex = 0;
+      setInterval(() => {
+        const user = mockUsers[Math.floor(Math.random() * mockUsers.length)];
+        const text = mockPhrases[Math.floor(Math.random() * mockPhrases.length)];
+        
+        const row = document.createElement('div');
+        row.className = 'flex items-start gap-1.5 leading-snug transition-all duration-300 opacity-90';
+        row.innerHTML = `
+          <span class="px-1 py-0.2 rounded ${user.bg} font-label-badge text-[9px] font-black shrink-0">${user.tag}</span>
+          <span class="${user.color} font-semibold shrink-0">${user.name}:</span>
+          <span class="text-on-surface truncate">${text}</span>
+        `;
+        
+        chatContainer.appendChild(row);
+        if (chatContainer.children.length > 5) {
+          chatContainer.removeChild(chatContainer.children[0]);
+        }
+      }, 2600);
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.7)]" data-active-classes="text-primary-container font-label-lg scale-105 drop-shadow-[0_0_8px_rgba(83,252,24,0.5)]"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 transition-all text-primary-container font-label-lg scale-105 drop-shadow-[0_0_8px_rgba(83,252,24,0.5)]" data-path="ver-en-vivo" href="#"><span class="material-symbols-outlined text-[22px]">sensors</span><span class="font-label-md text-label-md mt-1 uppercase">En Vivo</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="horarios" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-md text-label-md mt-1 uppercase">Horarios</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="beneficios-sub" href="#"><span class="material-symbols-outlined text-[22px]">workspace_premium</span><span class="font-label-md text-label-md mt-1 uppercase">Sub Perks</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-all" data-path="redes" href="#"><span class="material-symbols-outlined text-[22px]">share</span><span class="font-label-md text-label-md mt-1 uppercase">Redes</span></a></div></nav></body></html>
