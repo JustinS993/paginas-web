@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#ffddb8", "surface-container": "#1f1f23", "surface-container-high": "#2a292e", "on-primary-fixed-variant": "#604100", "outline-variant": "#504535", "surface-dim": "#131317", "on-background": "#e4e1e7", "inverse-on-surface": "#303034", "primary-fixed-dim": "#fabc4d", "surface-tint": "#fabc4d", "on-surface": "#e4e1e7", "surface-variant": "#353439", "surface": "#131317", "on-tertiary-fixed-variant": "#653e00", "secondary-container": "#62259b", "secondary-fixed": "#f0dbff", "outline": "#9d8f7c", "primary-container": "#e5a93c", "primary-fixed": "#ffdead", "on-error-container": "#ffdad6", "error-container": "#93000a", "inverse-surface": "#e4e1e7", "on-secondary-container": "#d1a1ff", "on-primary-fixed": "#281900", "secondary-fixed-dim": "#ddb8ff", "on-primary": "#432c00", "primary": "#ffc665", "tertiary": "#ffc57e", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#39393d", "tertiary-container": "#f8a111", "surface-container-highest": "#353439", "surface-container-low": "#1b1b1f", "on-secondary-fixed-variant": "#62259b", "surface-container-lowest": "#0e0e12", "secondary": "#ddb8ff", "on-primary-container": "#5e4000", "error": "#ffb4ab", "on-error": "#690005", "on-surface-variant": "#d4c4b0", "on-tertiary": "#472a00", "on-tertiary-container": "#643d00", "on-secondary": "#490081", "inverse-primary": "#7e5700", "on-secondary-fixed": "#2c0051", "on-tertiary-fixed": "#2a1700", "background": "#131317" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.75rem", "space-xl": "3rem", "margin": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "3rem", "gutter-lg": "2.5rem", "space-sm": "0.5rem", "margin-lg": "5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-hero": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="Studio Atelier Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgY4FCAVW4iICwI7nVIyAbTZRndtCvxOqWFH1GZL3bVtiQ-FSpixaWU4U6scfNEses0xMoaNvt-4CF0rp5A_F5BYJCypd5SXTPpsLhjdg99m4rL42XNdcYoYtBA7O9BDadEn29khHTFesi5xUhu9I94JoDicwewXeyuKjUiiE4d305cOv2S7_ba6tvuEt5rkffmEI7WXaMuHJ2tUwdK8FMhpgLuuPiQk2E8IWE2CKUTx6G7HBKg0utsA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface">Obsidian</span><span class="font-label-caps text-label-caps uppercase tracking-widest text-outline -mt-1">Panel Estudio</span></div></div><div class="px-space-md mb-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Inventario &amp; Taller</span></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="panel-de-administracion" href="#"><span class="material-symbols-outlined text-body-lg">grid_view</span><span class="font-label-md text-label-md">Catálogo &amp; Obras</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded transition-all bg-surface-container-high text-primary font-semibold" data-path="publicar-nueva-obra" href="#"><span class="material-symbols-outlined text-body-lg">add_circle</span><span class="font-label-md text-label-md">Publicar Nueva Obra</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="colecciones" href="#"><span class="material-symbols-outlined text-body-lg">collections_bookmark</span><span class="font-label-md text-label-md">Series &amp; Ediciones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="solicitudes-de-adquisicion" href="#"><span class="material-symbols-outlined text-body-lg">mail</span><span class="font-label-md text-label-md">Solicitudes de Adquisición</span></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Almacén de Medios</span><div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden"><div class="bg-primary h-full w-3/5"></div></div><span class="font-body-sm text-body-sm text-outline-variant">24.8 GB / 50 GB</span></div><a class="flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-wider" data-path="galeria-publica" href="#"><span class="material-symbols-outlined text-body-md">visibility</span><span>Ver Galería Pública</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Estudio Curatorial Privado</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-body-sm text-body-sm text-on-surface-variant">Sincronizado</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-outline text-body-lg">search</span><input class="bg-transparent text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none w-36" placeholder="Buscar archivo..." type="text"/><kbd class="font-label-caps text-label-caps bg-surface-container-high px-space-xs rounded text-outline-variant">/</kbd></div><a class="text-outline hover:text-on-surface transition-colors p-space-xs" data-path="galeria-publica" href="#"><span class="material-symbols-outlined text-body-lg">open_in_new</span></a><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTzeTkqxc8TQ0G3W--Wyho6zKzLSMXoeCTEbsuVgEfnmA2h_OzyJ5gi87UMhME-XT4PRNaetBM7pqCWS7LDiFr0EEOVKh2M8l9ZO3M5M3EfQdGKIkio50NFff3n34A2_F13gGlRZRMSjV81GFiRfjJ3vEN8_V0t3UC2y6Mc_Tx6-s_CW86CvrZItuQFBckhYQvUKTbhwTYWu8H-IBhoaRSQG4ybD7cSjkmvsRviLLtLRm03gxrUD5zw"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Director de Atelier</span><span class="font-body-sm text-body-sm text-outline leading-tight">Privado</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Top Atmospheric Ambient Light Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[600px] h-[300px] bg-gradient-to-br from-primary/10 via-secondary-container/5 to-transparent blur-3xl pointer-events-none"></div>
+<div class="absolute top-12 right-12 w-[400px] h-[250px] bg-gradient-to-bl from-tertiary-container/10 via-transparent to-transparent blur-2xl pointer-events-none"></div>
+<!-- Atelier Header Strip -->
+<div class="relative z-10 px-margin-lg pt-space-lg pb-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline font-label-caps text-label-caps uppercase tracking-widest">
+<span>Catálogo de Atelier</span>
+<span>/</span>
+<span class="text-primary font-semibold">Nueva Entrada Curatorial</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Ingreso de Nueva Pieza</h1>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-space-xs py-0.5 rounded uppercase">Master Archive v4.2</span>
+</div>
+</div>
+<!-- Quick Status Badges -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Espacio de Trabajo: <strong class="text-on-surface font-medium">Borrador no indexado</strong></span>
+</div>
+<div class="text-outline-variant font-label-caps text-label-caps uppercase">Auto-guardado activo (hace 2 min)</div>
+</div>
+</div>
+<!-- Main Studio Split Workspace (12-Column Layout) -->
+<div class="relative z-10 px-margin-lg pb-32 grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-start">
+<!-- ================= LEFT COLUMN: MEDIA CANVAS, VIEWPORT & ENGINE (5 COLS) ================= -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Drag & Drop Zone / Master Canvas Previews -->
+<div class="relative flex flex-col bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden group">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">lens_blur</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Previsualizador Master</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-highest px-space-xs py-0.5 rounded text-outline uppercase">Display P3 Activo</span>
+</div>
+<!-- Interactive Viewport Card with Spotlight Track Light -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col items-center justify-center p-space-md text-center transition-all duration-300" id="drop-zone">
+<!-- Layered Artwork Preview (Loaded State) -->
+<div class="absolute inset-0 w-full h-full" id="preview-container">
+<img class="w-full h-full object-cover transition-transform duration-500 scale-100" data-alt="Dark, atmospheric high-contrast fine art portrait with volumetric amber light slicing through deep obsidian shadows, sculptural texture, cinematic museum curation aesthetic" id="master-preview-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMpVxbagN2qzbEwj-EHpibkO6g1X2dIouT8Trz6TjKy5WCt-pW71dFr_-qrTf67fgsZuEl5R9qmXY2_y0JTtz_ly_gKrVqWSBZvzvEcreSrT0in2npsxX81B0JlzQHX3S7hIlTwv7eX3diSXILGbNKYCKcY4dx9Q6iSVrVY7DusoxgpUk7dYAIJKRJXwOMiNLIMo2lkpTzX33i1TXS7Yn7qY_sIPcF7xrC1rEDZ74paG0JOtlm5q5R-Q"/>
+<!-- Subtle Inner Film Stroke -->
+<div class="absolute inset-0 pointer-events-none shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]"></div>
+<!-- Live Watermark Protection Layer -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none transition-opacity duration-300 opacity-60" id="watermark-layer">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/70 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-lg">
+<span class="font-headline-sm text-headline-sm tracking-widest uppercase text-on-surface/40">Studio Obsidian Atelier</span>
+<span class="material-symbols-outlined text-body-sm text-on-surface/40">verified_user</span>
+</div>
+</div>
+<!-- Curatorial Loupe Coordinate Overlay (Minimalistic Art Museum UI) -->
+<div class="absolute bottom-3 left-3 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded text-outline-variant font-label-caps text-label-caps">
+<span>ZOOM: 100%</span>
+<span>•</span>
+<span>4096 × 5120 PX</span>
+</div>
+</div>
+<!-- Drag & Drop Hover / Upload Trigger Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/90 backdrop-blur-sm flex flex-col items-center justify-center p-space-lg text-center transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto" id="upload-overlay">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm text-primary shadow-md">
+<span class="material-symbols-outlined text-headline-md">cloud_upload</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Reemplazar Archivo Maestro</h3>
+<p class="font-body-sm text-body-sm text-outline mb-space-md max-w-xs">Arrastra y suelta o selecciona archivos de alta resolución RAW, TIFF, PSD, PNG o JPG hasta 100MB.</p>
+<label class="cursor-pointer bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded font-semibold hover:bg-primary-container transition-all shadow-[0_0_20px_rgba(229,169,60,0.35)]">
+<span>Examinar Archivos</span>
+<input accept=".png,.jpg,.jpeg,.tiff,.psd" class="hidden" type="file"/>
+</label>
+</div>
+</div>
+<!-- Color Profile & Exposure Framing Controls -->
+<div class="mt-space-md flex flex-col gap-space-sm">
+<!-- Quick View Controls Toolbar -->
+<div class="grid grid-cols-4 gap-space-xs bg-surface-container p-1 rounded-lg">
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded bg-surface-container-high text-primary font-label-md text-label-md transition-colors" title="Ajuste de Encuadre" type="button">
+<span class="material-symbols-outlined text-body-md">crop</span>
+<span class="hidden sm:inline">Encuadre</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-md text-label-md" title="Compensación de Exposición" type="button">
+<span class="material-symbols-outlined text-body-md">exposure</span>
+<span class="hidden sm:inline">Luz</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-md text-label-md" title="Rotar o Invertir" type="button">
+<span class="material-symbols-outlined text-body-md">rotate_90_degrees_ccw</span>
+<span class="hidden sm:inline">Girar</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded bg-surface-container-highest text-tertiary-fixed font-label-md text-label-md transition-colors" id="toggle-watermark-btn" title="Marca de Agua" type="button">
+<span class="material-symbols-outlined text-body-md">copyright</span>
+<span class="hidden sm:inline">Firma</span>
+</button>
+</div>
+<!-- Profile & Protection Split Strip -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Color Space Selector -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Espacio de Color</span>
+<div class="flex items-center justify-between mt-1">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="accent-primary" name="color-profile" type="radio" value="p3"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Display P3</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input class="accent-primary" name="color-profile" type="radio" value="srgb"/>
+<span class="font-body-sm text-body-sm text-outline">sRGB</span>
+</label>
+</div>
+</div>
+<!-- Watermark Density Control -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Cripto-Firma / Marca</span>
+<span class="font-label-caps text-label-caps text-primary">60%</span>
+</div>
+<input class="w-full accent-primary h-1 bg-surface-container-highest rounded-lg cursor-pointer mt-2" max="100" min="0" type="range" value="60"/>
+</div>
+</div>
+<!-- High-Fidelity Asset Manifest Block -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-body-lg">image</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">nocturne_chiro_16bit.tiff</span>
+<span class="font-label-caps text-label-caps text-outline">84.2 MB • TIFF 16-BIT UNCOMPRESSED</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-md">check_circle</span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase">Íntegro</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Media Assets (Detail Loupe Shots, Process Photos) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Vistas Auxiliares &amp; Macro-Detalle</span>
+<span class="font-label-caps text-label-caps text-outline-variant">3 / 5 Espacios</span>
+</div>
+<div class="grid grid-cols-4 gap-space-sm">
+<div class="relative aspect-square rounded-lg bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Macro extreme close-up of brushstroke oil paint texture with amber gold leaf flecks on dark obsidian canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqnXSKF3DKuiGwwv_AO65dT3KzPOtLKdXVKYeRP2SrbDQ9_lBWuJmLkRrQQ6SJnWPiZneK8SyXuKnKLVkzT2guyiSSQRjnWsFNdPEG-ELUzvzyiqYS0b3we77OimJ1GjYT-e0ChIUKah-8hU3rX9-Z1Cez-IuaUDUrr7LcbjZcbK-zbaxBqtjuNL3fNA3TVqod1nwugU_EdQqHegsTRrMy3egjjuC0JSyYt973bLj-xoR27cX9-z7ymQ"/>
+<div class="absolute inset-0 bg-surface-container-lowest/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-body-md">delete</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-lg bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Studio photograph showing the physical framing of a dark fine art print hanging under spotlight on concrete gallery wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc8TONHzlLJSzVbpmm71Y170x1WoQ1JjGeBh8faudwzHkRk_n5vFzwHNyZs6raZnZYGZNSjUzWRJJZz4JtjH6dPsdoic6sABgsC_0VhAQolC1L-LX5uG0E4dJNABJllmt_CkJUjdzP-0rsJ3veOE0wFpKzHvW54G9JYFsnf7U52T7e1FbxtpJbxzWzPv1pL8OfqP4Rwhh8RcyPezrMGdlU9Ltn9tEcTTVIMkcku1RpdUsaYoTNqoZnfQ"/>
+<div class="absolute inset-0 bg-surface-container-lowest/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-body-md">delete</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-lg bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Curator hands wearing white archival cotton gloves examining a dark museum master print illuminated by warm track lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_tD04IAWz2929OcoTrUqRGZQLPPCz6Y0GmTrFPtWE1sozqWuadGCq-H8YCAc5trza5LkoCuWZ5LCOpJdFIkxpHs8eYGdbA8Q5BI0-XAykDSkmXvhspofOqV4e4ozQ3kDEEQd7O4A8C8OwUiyMu4bos-haCXr-GuylYl04LRmMukQwBXAr23GxnCxpbKWYiuvUSMIOza7caJnl1RJCqExdm1fQUMOQb85Kup-WkJusoNO6lVxFv163mg"/>
+<div class="absolute inset-0 bg-surface-container-lowest/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-body-md">delete</span>
+</div>
+</div>
+<button class="aspect-square rounded-lg bg-surface-container-high hover:bg-surface-bright flex flex-col items-center justify-center text-outline hover:text-on-surface transition-all gap-1" type="button">
+<span class="material-symbols-outlined text-body-lg">add</span>
+<span class="font-label-caps text-label-caps">Agregar</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT COLUMN: CURATORIAL FORM METADATA & SPECS (7 COLS) ================= -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Curatorial Main Metadata Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">01 // Ficha Curatorial Básica</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Obligatorio</span>
+</div>
+<!-- Title Field with Editorial Serifs -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Título de la Obra</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-md text-headline-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline-variant/60" placeholder="Ej. El Umbral de las Cenizas..." type="text" value="Nocturno V: La Geometría del Desvelo"/>
+<span class="font-body-sm text-body-sm text-outline-variant">El título aparecerá en el certificado de autenticidad y en el catálogo físico.</span>
+</div>
+<!-- Series / Collection Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Series Dropdown with Modal Trigger -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Colección o Serie</label>
+<button class="font-label-caps text-label-caps text-primary hover:text-primary-fixed-dim uppercase flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-body-sm">add</span>
+<span>+ Crear Nueva Serie</span>
+</button>
+</div>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">Serie Silencios Minerales (2024)</option>
+<option>Elegías de Obsidiana (2023)</option>
+<option>Transmutación de la Materia (2022)</option>
+<option>Obras Independientes / Standalone</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Technique / Medium Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Técnica Artística</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">Técnica Mixta: Óleo y Pigmento Digital Master</option>
+<option>Pintura Digital &amp; Render Neuronal</option>
+<option>Tinta China y Pan de Oro sobre Lino</option>
+<option>Grabado Monotipo y Tratamiento Clásico</option>
+<option>Giclée sobre Algodón Hahnemühle 310g</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">palette</span>
+</div>
+</div>
+</div>
+<!-- Real Dimensions, Resolution and Year Spec Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-1 bg-surface-container p-space-sm rounded-lg">
+<span class="font-label-caps text-label-caps text-outline uppercase">Ancho Físico</span>
+<div class="flex items-center gap-1">
+<input class="w-full bg-transparent font-title-lg text-title-lg text-on-surface focus:outline-none" type="number" value="120"/>
+<span class="font-body-sm text-body-sm text-outline">CM</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container p-space-sm rounded-lg">
+<span class="font-label-caps text-label-caps text-outline uppercase">Alto Físico</span>
+<div class="flex items-center gap-1">
+<input class="w-full bg-transparent font-title-lg text-title-lg text-on-surface focus:outline-none" type="number" value="150"/>
+<span class="font-body-sm text-body-sm text-outline">CM</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container p-space-sm rounded-lg">
+<span class="font-label-caps text-label-caps text-outline uppercase">Resolución</span>
+<div class="flex items-center gap-1">
+<input class="w-full bg-transparent font-title-lg text-title-lg text-on-surface focus:outline-none" type="number" value="600"/>
+<span class="font-body-sm text-body-sm text-outline">DPI</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container p-space-sm rounded-lg">
+<span class="font-label-caps text-label-caps text-outline uppercase">Año de Ejecución</span>
+<input class="w-full bg-transparent font-title-lg text-title-lg text-on-surface focus:outline-none" type="number" value="2024"/>
+</div>
+</div>
+<!-- Tools and Software Used (Interactive Chips) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Herramientas &amp; Software Empleados</label>
+<div class="flex flex-wrap items-center gap-space-xs p-space-sm bg-surface-container-lowest rounded-lg">
+<span class="flex items-center gap-1 bg-surface-container-high px-space-xs py-1 rounded text-primary font-body-sm text-body-sm">
+<span>Photoshop Master CC</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-body-sm">close</span></button>
+</span>
+<span class="flex items-center gap-1 bg-surface-container-high px-space-xs py-1 rounded text-primary font-body-sm text-body-sm">
+<span>Wacom Cintiq Pro 32</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-body-sm">close</span></button>
+</span>
+<span class="flex items-center gap-1 bg-surface-container-high px-space-xs py-1 rounded text-primary font-body-sm text-body-sm">
+<span>Pigmentos Naturales de Carbón</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-body-sm">close</span></button>
+</span>
+<span class="flex items-center gap-1 bg-surface-container-high px-space-xs py-1 rounded text-primary font-body-sm text-body-sm">
+<span>Capture One Pro</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-body-sm">close</span></button>
+</span>
+<div class="flex items-center gap-1">
+<input class="bg-transparent text-on-surface font-body-sm text-body-sm px-space-xs py-1 focus:outline-none placeholder:text-outline-variant w-44" placeholder="+ Agregar herramienta..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Curatorial Statement & Process Notes (Rich Text Editor) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">02 // Declaración Curatorial &amp; Proceso</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Catálogo Razonado</span>
+</div>
+<!-- Rich Text Custom Editor Bar -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden">
+<div class="flex items-center flex-wrap gap-space-xs p-space-xs bg-surface-container-high border-b border-surface-container">
+<button class="p-1 rounded hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">format_bold</span></button>
+<button class="p-1 rounded hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">format_italic</span></button>
+<button class="p-1 rounded hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">format_underlined</span></button>
+<span class="w-px h-4 bg-outline-variant/40 mx-1"></span>
+<button class="p-1 rounded hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">format_quote</span></button>
+<button class="p-1 rounded hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">format_list_bulleted</span></button>
+<span class="w-px h-4 bg-outline-variant/40 mx-1"></span>
+<span class="font-label-caps text-label-caps text-outline px-space-xs uppercase">Estilo de texto</span>
+</div>
+<textarea class="w-full bg-transparent p-space-md text-on-surface font-body-md text-body-md leading-relaxed focus:outline-none placeholder:text-outline-variant/60 resize-y" placeholder="Escribe la memoria conceptual, intencionalidad poética o el registro de pigmentos y atmósfera de la pieza..." rows="5">Esta obra examina la tensión entre la penumbra mineral y los cortes longitudinales de luz áurea. Inspirada en los tratados renacentistas del claroscuro, combina la lentitud de la pasta al óleo con la precisión milimétrica del renderizado espectral para evocar una sensación de presencia litúrgica en la era algorítmica.</textarea>
+</div>
+<!-- Thematic Tags Chips -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Etiquetas Curatorias &amp; Temáticas</label>
+<div class="flex flex-wrap gap-space-xs">
+<span class="bg-surface-container text-on-surface px-space-sm py-1 rounded-full font-label-caps text-label-caps uppercase flex items-center gap-1">#Claroscuro <button class="hover:text-error"><span class="material-symbols-outlined text-body-sm">close</span></button></span>
+<span class="bg-surface-container text-on-surface px-space-sm py-1 rounded-full font-label-caps text-label-caps uppercase flex items-center gap-1">#Nocturno <button class="hover:text-error"><span class="material-symbols-outlined text-body-sm">close</span></button></span>
+<span class="bg-surface-container text-on-surface px-space-sm py-1 rounded-full font-label-caps text-label-caps uppercase flex items-center gap-1">#Obsidiana <button class="hover:text-error"><span class="material-symbols-outlined text-body-sm">close</span></button></span>
+<span class="bg-surface-container text-on-surface px-space-sm py-1 rounded-full font-label-caps text-label-caps uppercase flex items-center gap-1">#FineArt2024 <button class="hover:text-error"><span class="material-symbols-outlined text-body-sm">close</span></button></span>
+<button class="bg-surface-container-high hover:bg-surface-bright text-outline hover:text-on-surface px-space-sm py-1 rounded-full font-label-caps text-label-caps uppercase transition-colors">+ Nueva Etiqueta</button>
+</div>
+</div>
+</div>
+<!-- Visibility and Commercial Editions Split Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Visibility Matrix -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">03 // Visibilidad</span>
+<span class="material-symbols-outlined text-outline text-body-md">visibility</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Public Option -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="mt-1 accent-primary" name="visibility" type="radio" value="public"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Público en Catálogo</span>
+<span class="font-body-sm text-body-sm text-outline">Visible en la galería principal y en las salas de exhibición abiertas.</span>
+</div>
+</label>
+<!-- Private Link Option -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 accent-primary" name="visibility" type="radio" value="unlisted"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Solo con Enlace Privado</span>
+<span class="font-body-sm text-body-sm text-outline">Accesible únicamente para coleccionistas con invitación cifrada.</span>
+</div>
+</label>
+<!-- Private Draft Option -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 accent-primary" name="visibility" type="radio" value="draft"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Borrador de Taller</span>
+<span class="font-body-sm text-body-sm text-outline">Exclusivo en el panel personal del artista para edición continua.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Editions and Art Prints Acquisition -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">04 // Venta de Copias &amp; Tiraje</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-tertiary-fixed">Habilitado</span>
+<input checked="" class="accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Pieza Original Única (1/1)</span>
+<span class="font-label-caps text-label-caps text-outline">Lienzo Master + Archivo RAW</span>
+</div>
+<div class="text-right">
+<span class="font-title-lg text-title-lg text-primary font-bold">12,500 €</span>
+<span class="block font-label-caps text-label-caps text-outline">Disponible</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Edición Limitada de Museo</span>
+<span class="font-label-caps text-label-caps text-outline">Tirada de 10 Copias Firmadas</span>
+</div>
+<div class="text-right">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">1,850 €</span>
+<span class="block font-label-caps text-label-caps text-outline">Tirada 10/10</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary font-label-caps text-label-caps uppercase tracking-wider hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-body-sm">tune</span>
+<span>Configurar Contrato Inteligente &amp; Provenance</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= FIXED BOTTOM ACTION BAR ================= -->
+<div class="fixed bottom-0 left-64 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_30px_rgba(0,0,0,0.8)] z-40 px-margin-lg flex items-center justify-between">
+<!-- Left Metadata Digest -->
+<div class="hidden md:flex items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Estado de Validación</span>
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Listo para incorporación al Catálogo General
+          </span>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Almacenamiento Restante</span>
+<span class="font-body-sm text-body-sm text-outline-variant">25.12 GB libres de 50 GB</span>
+</div>
+</div>
+<!-- Action Buttons Cluster -->
+<div class="flex items-center gap-space-sm ml-auto">
+<!-- Save Draft Button -->
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-body-md">bookmark_border</span>
+<span>Guardar Borrador</span>
+</button>
+<!-- Preview in Gallery Button -->
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface bg-surface-container hover:bg-surface-container-high transition-all flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-body-md">visibility</span>
+<span>Vista Previa en Galería</span>
+</button>
+<!-- High-Hierarchy Golden Spotlight Publish CTA -->
+<button class="bg-primary hover:bg-primary-container text-on-primary font-title-lg text-title-lg px-space-lg py-space-sm rounded font-semibold transition-all duration-300 flex items-center gap-space-xs shadow-[0_0_28px_rgba(229,169,60,0.4)] hover:shadow-[0_0_36px_rgba(229,169,60,0.6)]" id="publish-btn" type="button">
+<span class="material-symbols-outlined text-body-lg">publish</span>
+<span>Publicar en Portafolio Ahora</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initStudioPublish() {
+    const toggleWatermark = document.getElementById('toggle-watermark-btn');
+    const watermarkLayer = document.getElementById('watermark-layer');
+    let watermarkVisible = true;
+
+    if (toggleWatermark && watermarkLayer) {
+      toggleWatermark.addEventListener('click', () => {
+        watermarkVisible = !watermarkVisible;
+        if (watermarkVisible) {
+          watermarkLayer.style.opacity = '0.6';
+          toggleWatermark.classList.add('bg-surface-container-highest', 'text-tertiary-fixed');
+          toggleWatermark.classList.remove('text-on-surface-variant');
+        } else {
+          watermarkLayer.style.opacity = '0';
+          toggleWatermark.classList.remove('bg-surface-container-highest', 'text-tertiary-fixed');
+          toggleWatermark.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    const publishBtn = document.getElementById('publish-btn');
+    if (publishBtn) {
+      publishBtn.addEventListener('click', () => {
+        const originalContent = publishBtn.innerHTML;
+        publishBtn.innerHTML = `
+          <span class="material-symbols-outlined text-body-lg animate-spin">progress_activity</span>
+          <span>Indexando Obra en Blockchain & CDN...</span>
+        `;
+        publishBtn.classList.add('opacity-90');
+        setTimeout(() => {
+          publishBtn.innerHTML = `
+            <span class="material-symbols-outlined text-body-lg">check_circle</span>
+            <span>¡Obra Publicada Exitosamente!</span>
+          `;
+          setTimeout(() => {
+            publishBtn.innerHTML = originalContent;
+            publishBtn.classList.remove('opacity-90');
+          }, 2400);
+        }, 1200);
+      });
+    }
+  })();
+</script></main></div></body></html>

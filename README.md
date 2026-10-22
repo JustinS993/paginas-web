@@ -32,3 +32,9 @@ No se requiere instalación ni compilación. Abre `sitio-web/index.html` en un n
 Página promocional para un canal de Kick con una identidad visual oscura y acentos neón. Incluye la página HTML, la guía de diseño y una captura de referencia en `nexus-kick-channel/`.
 
 Abre `nexus-kick-channel/code.html` en un navegador para ver la página. No requiere instalación ni compilación.
+
+## Atelier Obsidiana
+
+Galería curatorial y portafolio de arte. Incluye la portada, la galería pública, colecciones temáticas, el detalle inmersivo de una obra y pantallas para administrar y publicar piezas.
+
+Abre `atelier-obsidiana/index.html` en un navegador para ver la portada. Las pantallas adicionales están organizadas por sección dentro de `atelier-obsidiana/`.

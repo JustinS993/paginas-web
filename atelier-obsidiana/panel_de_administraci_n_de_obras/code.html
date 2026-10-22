@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#ffddb8", "surface-container": "#1f1f23", "surface-container-high": "#2a292e", "on-primary-fixed-variant": "#604100", "outline-variant": "#504535", "surface-dim": "#131317", "on-background": "#e4e1e7", "inverse-on-surface": "#303034", "primary-fixed-dim": "#fabc4d", "surface-tint": "#fabc4d", "on-surface": "#e4e1e7", "surface-variant": "#353439", "surface": "#131317", "on-tertiary-fixed-variant": "#653e00", "secondary-container": "#62259b", "secondary-fixed": "#f0dbff", "outline": "#9d8f7c", "primary-container": "#e5a93c", "primary-fixed": "#ffdead", "on-error-container": "#ffdad6", "error-container": "#93000a", "inverse-surface": "#e4e1e7", "on-secondary-container": "#d1a1ff", "on-primary-fixed": "#281900", "secondary-fixed-dim": "#ddb8ff", "on-primary": "#432c00", "primary": "#ffc665", "tertiary": "#ffc57e", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#39393d", "tertiary-container": "#f8a111", "surface-container-highest": "#353439", "surface-container-low": "#1b1b1f", "on-secondary-fixed-variant": "#62259b", "surface-container-lowest": "#0e0e12", "secondary": "#ddb8ff", "on-primary-container": "#5e4000", "error": "#ffb4ab", "on-error": "#690005", "on-surface-variant": "#d4c4b0", "on-tertiary": "#472a00", "on-tertiary-container": "#643d00", "on-secondary": "#490081", "inverse-primary": "#7e5700", "on-secondary-fixed": "#2c0051", "on-tertiary-fixed": "#2a1700", "background": "#131317" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.75rem", "space-xl": "3rem", "margin": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "3rem", "gutter-lg": "2.5rem", "space-sm": "0.5rem", "margin-lg": "5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-hero": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="Studio Atelier Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgY4FCAVW4iICwI7nVIyAbTZRndtCvxOqWFH1GZL3bVtiQ-FSpixaWU4U6scfNEses0xMoaNvt-4CF0rp5A_F5BYJCypd5SXTPpsLhjdg99m4rL42XNdcYoYtBA7O9BDadEn29khHTFesi5xUhu9I94JoDicwewXeyuKjUiiE4d305cOv2S7_ba6tvuEt5rkffmEI7WXaMuHJ2tUwdK8FMhpgLuuPiQk2E8IWE2CKUTx6G7HBKg0utsA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface">Obsidian</span><span class="font-label-caps text-label-caps uppercase tracking-widest text-outline -mt-1">Panel Estudio</span></div></div><div class="px-space-md mb-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Inventario &amp; Taller</span></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="panel-de-administracion" href="#"><span class="material-symbols-outlined text-body-lg">grid_view</span><span class="font-label-md text-label-md">Catálogo &amp; Obras</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="publicar-nueva-obra" href="#"><span class="material-symbols-outlined text-body-lg">add_circle</span><span class="font-label-md text-label-md">Publicar Nueva Obra</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="colecciones" href="#"><span class="material-symbols-outlined text-body-lg">collections_bookmark</span><span class="font-label-md text-label-md">Series &amp; Ediciones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="solicitudes-de-adquisicion" href="#"><span class="material-symbols-outlined text-body-lg">mail</span><span class="font-label-md text-label-md">Solicitudes de Adquisición</span></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Almacén de Medios</span><div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden"><div class="bg-primary h-full w-3/5"></div></div><span class="font-body-sm text-body-sm text-outline-variant">24.8 GB / 50 GB</span></div><a class="flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-wider" data-path="galeria-publica" href="#"><span class="material-symbols-outlined text-body-md">visibility</span><span>Ver Galería Pública</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Estudio Curatorial Privado</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-body-sm text-body-sm text-on-surface-variant">Sincronizado</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-outline text-body-lg">search</span><input class="bg-transparent text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none w-36" placeholder="Buscar archivo..." type="text"/><kbd class="font-label-caps text-label-caps bg-surface-container-high px-space-xs rounded text-outline-variant">/</kbd></div><a class="text-outline hover:text-on-surface transition-colors p-space-xs" data-path="galeria-publica" href="#"><span class="material-symbols-outlined text-body-lg">open_in_new</span></a><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTzeTkqxc8TQ0G3W--Wyho6zKzLSMXoeCTEbsuVgEfnmA2h_OzyJ5gi87UMhME-XT4PRNaetBM7pqCWS7LDiFr0EEOVKh2M8l9ZO3M5M3EfQdGKIkio50NFff3n34A2_F13gGlRZRMSjV81GFiRfjJ3vEN8_V0t3UC2y6Mc_Tx6-s_CW86CvrZItuQFBckhYQvUKTbhwTYWu8H-IBhoaRSQG4ybD7cSjkmvsRviLLtLRm03gxrUD5zw"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Director de Atelier</span><span class="font-body-sm text-body-sm text-outline leading-tight">Privado</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="px-space-md sm:px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-lg max-w-[1600px] mx-auto w-full">
+<!-- Header Section with Atelier Context & Quick Status -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Bóveda &amp; Catálogo Maestro</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Temporada 2024 / Otoño</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Gestión del Atelier</h1>
+<p class="font-body-md text-body-md text-outline-variant max-w-xl">
+          Supervisión integral de piezas físicas, series limitadas, interacción curatorial y solicitudes privadas de adquisición.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-body-lg text-outline">tune</span>
+<span class="font-label-md text-label-md">Filtros Avanzados</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded transition-all flex items-center gap-space-xs shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-body-lg text-outline">file_download</span>
+<span class="font-label-md text-label-md">Exportar COA</span>
+</button>
+<button class="bg-primary hover:bg-primary-fixed text-on-primary font-title-lg text-label-md px-space-lg py-space-sm rounded flex items-center gap-space-xs shadow-[0_0_24px_rgba(255,198,101,0.25)] hover:shadow-[0_0_32px_rgba(255,198,101,0.4)] transition-all">
+<span class="material-symbols-outlined text-body-lg font-bold">add</span>
+<span>Publicar Nueva Obra</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Bento Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Obras Publicadas -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Inventario Activo</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs font-semibold">48</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-body-lg">palette</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline-variant">32 Únicas • 16 Múltiplos</span>
+<span class="text-primary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-body-sm">check_circle</span>
+            100% Curadas
+          </span>
+</div>
+</div>
+<!-- Metric 2: Visitas Mensuales -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Visitas Mensuales</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs font-semibold">24.8K</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-body-lg">visibility</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-body-sm">trending_up</span>
+<span class="font-semibold">+14.2%</span>
+</div>
+<span class="text-outline-variant">vs. mes anterior</span>
+</div>
+</div>
+<!-- Metric 3: Obras Guardadas -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/5 rounded-full blur-2xl group-hover:bg-secondary/10 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Obras Guardadas</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs font-semibold">3,840</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline-variant">En colecciones privadas</span>
+<span class="text-secondary font-medium">+218 esta semana</span>
+</div>
+</div>
+<!-- Metric 4: Consultas de Prints -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-container/10 rounded-full blur-2xl"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Consultas Prints / COA</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs font-semibold">12</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-body-lg">mail</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm">
+<span class="bg-surface-container-high text-tertiary px-space-xs py-0.5 rounded font-label-caps text-label-caps uppercase">12 Pendientes</span>
+<span class="text-outline hover:text-on-surface cursor-pointer flex items-center text-body-sm transition-colors">
+            Revisar
+            <span class="material-symbols-outlined text-body-sm ml-0.5">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace: Asymmetric Layout (Table 70% + Right Inspector/Activity Feed 30%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Table & Filters (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<!-- Filter Tabs -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-lg overflow-x-auto">
+<button class="px-space-md py-1.5 rounded font-label-md text-label-md bg-surface-container text-primary shadow-sm font-semibold whitespace-nowrap">
+              Todas (56)
+            </button>
+<button class="px-space-md py-1.5 rounded font-label-md text-label-md text-outline hover:text-on-surface transition-colors whitespace-nowrap">
+              Publicadas (48)
+            </button>
+<button class="px-space-md py-1.5 rounded font-label-md text-label-md text-outline hover:text-on-surface transition-colors whitespace-nowrap">
+              Borradores (5)
+            </button>
+<button class="px-space-md py-1.5 rounded font-label-md text-label-md text-outline hover:text-on-surface transition-colors whitespace-nowrap">
+              Archivadas (3)
+            </button>
+</div>
+<!-- Internal Catalog Search -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-lg min-w-[240px]">
+<span class="material-symbols-outlined text-outline text-body-md">search</span>
+<input class="bg-transparent text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm focus:outline-none w-full" placeholder="Buscar título, técnica, serie..." type="text"/>
+<span class="font-label-caps text-label-caps text-outline-variant uppercase">⌘K</span>
+</div>
+</div>
+<!-- Interactive Works Table -->
+<div class="bg-surface-container-low rounded-xl shadow-xl overflow-hidden flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-sm bg-surface-container-lowest/80 text-outline font-label-caps text-label-caps uppercase tracking-wider items-center">
+<div class="col-span-5 flex items-center gap-space-sm">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<span>Obra &amp; Especificación</span>
+</div>
+<div class="col-span-2 hidden md:block">Colección / Serie</div>
+<div class="col-span-2 text-right hidden sm:block">Tracción</div>
+<div class="col-span-2 text-center">Estado</div>
+<div class="col-span-1 text-right">Acciones</div>
+</div>
+<!-- Table Rows Container -->
+<div class="flex flex-col divide-y-0">
+<!-- Row 1: Published Spotlight -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-md items-center hover:bg-surface-container/60 transition-colors group relative">
+<div class="col-span-12 sm:col-span-7 md:col-span-5 flex items-center gap-space-md min-w-0">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dark aesthetic contemporary textured oil and gold pigment painting on black Belgian linen, dramatic single beam gallery lighting, deep chiaroscuro, mineral pigments, hyperdetailed macro art texture, muted amber and deep violet tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__zjT4-FPuNMiGB3rsstfEz4l9wLIVm42ZZjQoO3SMlFmxG15pJtRBajrVW_N07QFd2e85q2d3MPrxMnVG0zLxJhy1sHYuxyQicdYCPKWXKqa6US-Av0Y6p9eRzbq_l9wKcFxx9fFt2K6bIlRii0OGEVCTc00Jg6Pv8cI5g9Hbqj8bvPcnMNzRMf009GvF1Iz87YzuoHom4AXiVtE1yteqkDd6NGu9UJJCTeie9kfMhBQmD-BUKWhWw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Cántico de Sombras I</span>
+<span class="material-symbols-outlined text-primary text-body-sm" title="Destacado en portada">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">Óleo, grafito y pan de oro • 180 × 140 cm</span>
+<span class="font-label-caps text-label-caps text-outline tracking-wider sm:hidden mt-0.5">Serie: Nocturnalia (2024)</span>
+</div>
+</div>
+<!-- Collection Info -->
+<div class="col-span-2 hidden md:flex flex-col">
+<span class="font-body-md text-body-md text-on-surface truncate">Nocturnalia</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Pieza Única</span>
+</div>
+<!-- Metrics -->
+<div class="col-span-2 hidden sm:flex flex-col items-end text-right">
+<span class="font-body-md text-body-md text-on-surface font-semibold">1,420 <span class="text-outline-variant font-normal">vistas</span></span>
+<span class="font-body-sm text-body-sm text-outline-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-secondary">bookmark</span>
+                  184 guardados
+                </span>
+</div>
+<!-- Status Badge (Emerald/Greenish dark studio tone) -->
+<div class="col-span-3 sm:col-span-2 flex justify-center">
+<span class="px-space-sm py-0.5 rounded-full bg-emerald-950/70 text-emerald-400 font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1 shadow-inner">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Publicado
+                </span>
+</div>
+<!-- Row Menu Trigger -->
+<div class="col-span-2 sm:col-span-1 flex justify-end relative">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('menu-row-1').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+<!-- Floating Dropdown Menu -->
+<div class="hidden absolute right-0 top-10 w-56 bg-surface-container-high rounded-xl shadow-2xl p-space-xs z-30 backdrop-blur-xl flex flex-col gap-0.5" id="menu-row-1">
+<button class="w-full text-left px-space-sm py-1.5 text-on-surface hover:bg-surface-container hover:text-primary rounded text-body-sm font-body-sm flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-body-md">edit</span>
+<span>Editar Detalles &amp; Ficha</span>
+</button>
+<button class="w-full text-left px-space-sm py-1.5 text-on-surface hover:bg-surface-container rounded text-body-sm font-body-sm flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-body-md text-primary">star</span>
+<span>Remover de Portada</span>
+</button>
+<button class="w-full text-left px-space-sm py-1.5 text-on-surface hover:bg-surface-container rounded text-body-sm font-body-sm flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-body-md">payments</span>
+<span>Gestionar Precio &amp; COA</span>
+</button>
+<button class="w-full text-left px-space-sm py-1.5 text-on-surface hover:bg-surface-container rounded text-body-sm font-body-sm flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-body-md">visibility_off</span>
+<span>Ocultar de Galería</span>
+</button>
+<div class="h-px bg-surface-variant my-1"></div>
+<button class="w-full text-left px-space-sm py-1.5 text-error hover:bg-error-container/30 rounded text-body-sm font-body-sm flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-body-md">delete</span>
+<span>Eliminar Obra</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 2: Published Multiple Edition -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-md items-center bg-surface-container-lowest/40 hover:bg-surface-container/60 transition-colors group relative">
+<div class="col-span-12 sm:col-span-7 md:col-span-5 flex items-center gap-space-md min-w-0">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Monochrome fine art archival pigment print with subtle warm sepia and bronze varnish coating, architectural brutalist geometries fading into deep obsidian mist, museum spotlight presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHc3YrMWhIW10iJ2xjifGkGDVad5zepQyXgbFgbsfyCjANlATbeEnWHpLYCoBVWN3sXxfdXXhF1OMNNToYzysQSce70JGB6-1xXrv19VNrzjXwGOi9olOJhJjsyCgGQ_ANFn4t_ai96xZM9DdP74-ScNSbwe9SubtiuSb-KMwnmP5Lm5qwb936IVQVOj8RDHeMFb86xTrpxb7fo731cPFBgpF7Mo7Kbf7_UWRdKoiKK67imvdzXMk59g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-lg text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Ecos del Vacío (Edición 03/10)</span>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">Grabado al aguafuerte &amp; Tinta Ferrogálica • 90 × 65 cm</span>
+<span class="font-label-caps text-label-caps text-outline tracking-wider sm:hidden mt-0.5">Serie: Arqueología Sonora</span>
+</div>
+</div>
+<!-- Collection Info -->
+<div class="col-span-2 hidden md:flex flex-col">
+<span class="font-body-md text-body-md text-on-surface truncate">Arqueología Sonora</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Edición Limitada</span>
+</div>
+<!-- Metrics -->
+<div class="col-span-2 hidden sm:flex flex-col items-end text-right">
+<span class="font-body-md text-body-md text-on-surface font-semibold">984 <span class="text-outline-variant font-normal">vistas</span></span>
+<span class="font-body-sm text-body-sm text-outline-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-secondary">bookmark</span>
+                  92 guardados
+                </span>
+</div>
+<!-- Status Badge -->
+<div class="col-span-3 sm:col-span-2 flex justify-center">
+<span class="px-space-sm py-0.5 rounded-full bg-emerald-950/70 text-emerald-400 font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Publicado
+                </span>
+</div>
+<!-- Actions -->
+<div class="col-span-2 sm:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Draft (Borrador Cálido) -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-md items-center hover:bg-surface-container/60 transition-colors group relative">
+<div class="col-span-12 sm:col-span-7 md:col-span-5 flex items-center gap-space-md min-w-0">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-70" data-alt="Dark studio sculpture study in unpolished basalt and raw brass leaf, atmospheric smoke haze, chiaroscuro warm spotlight casting sharp angled shadows on dark pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGUCPPKM_MfrTvbV-GOwKo4p3NywQCcMyGL7p5zpHCq57ERDkPXTnPWoDFkagEpzcMCPazv38HFgf8GFZucxqZ_YJX7d7dPqpD8OUN5RMVyupLZzeOSCPjKIhwtYCuDvmHzJuNruG6x9jGPasyuVDsRRtTPRiBaro7qhZx_lVSOwRmXG_eyv2-ssQpA5eReOlmkw1TVITUx_rbmhCux4ZL1bylddRfQM1RFbRMkV29_XqGwLev1xjPMg"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant text-body-md">lock</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-body-md text-on-surface-variant font-semibold truncate group-hover:text-on-surface transition-colors">Monolito Suspendido</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container px-1 rounded">Incompleto</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">Escultura en Basalto y Latón Envejecido • 45 × 30 × 30 cm</span>
+</div>
+</div>
+<!-- Collection Info -->
+<div class="col-span-2 hidden md:flex flex-col">
+<span class="font-body-md text-body-md text-outline truncate">Materia Inerte</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Sin Asignar</span>
+</div>
+<!-- Metrics -->
+<div class="col-span-2 hidden sm:flex flex-col items-end text-right">
+<span class="font-body-md text-body-md text-outline-variant">—</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Solo Vista Privada</span>
+</div>
+<!-- Status Badge (Amber/Warm studio tone) -->
+<div class="col-span-3 sm:col-span-2 flex justify-center">
+<span class="px-space-sm py-0.5 rounded-full bg-amber-950/60 text-primary-fixed-dim font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1 shadow-inner">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Borrador
+                </span>
+</div>
+<!-- Actions -->
+<div class="col-span-2 sm:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Row 4: Published Artwork -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-md items-center bg-surface-container-lowest/40 hover:bg-surface-container/60 transition-colors group relative">
+<div class="col-span-12 sm:col-span-7 md:col-span-5 flex items-center gap-space-md min-w-0">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Abstract minimalist charcoal on heavy cotton rag paper, energetic diagonal gestures, deep soot black strokes against natural warm off-white fiber, studio lighting setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAogb61zH_-bB1nLBQSy85gklnW5uIXfylysJpypsA-jAu54Pr-yRz8lcvUXaZ2SXs8S6ylMROY24g9p5S5ou-E_Hm0wEcM6wCqBylZpUGx17vVWfEzy21frEQKIRjLpSCH_h2Au3D2kurzMMK3McPiNFdtcPgfQehXOCwLv__Zc8_m4Q0dgjxb0OQsmI-uzsFkepKGHmFAKZ9kiJ24Q7eiMoyzS2gFp_S6czZkArtvbuqUl0SjtVwi_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-lg text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Tensión y Fractura IV</span>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">Carbón comprimido sobre papel Arches • 120 × 90 cm</span>
+</div>
+</div>
+<!-- Collection Info -->
+<div class="col-span-2 hidden md:flex flex-col">
+<span class="font-body-md text-body-md text-on-surface truncate">Estructuras Rotos</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Pieza Única</span>
+</div>
+<!-- Metrics -->
+<div class="col-span-2 hidden sm:flex flex-col items-end text-right">
+<span class="font-body-md text-body-md text-on-surface font-semibold">2,180 <span class="text-outline-variant font-normal">vistas</span></span>
+<span class="font-body-sm text-body-sm text-outline-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px] text-secondary">bookmark</span>
+                  312 guardados
+                </span>
+</div>
+<!-- Status Badge -->
+<div class="col-span-3 sm:col-span-2 flex justify-center">
+<span class="px-space-sm py-0.5 rounded-full bg-emerald-950/70 text-emerald-400 font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Publicado
+                </span>
+</div>
+<!-- Actions -->
+<div class="col-span-2 sm:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Row 5: Another Draft Work -->
+<div class="grid grid-cols-12 gap-space-sm px-space-lg py-space-md items-center hover:bg-surface-container/60 transition-colors group relative">
+<div class="col-span-12 sm:col-span-7 md:col-span-5 flex items-center gap-space-md min-w-0">
+<input class="rounded bg-surface-container text-primary focus:ring-0 focus:outline-none w-3.5 h-3.5 cursor-pointer" type="checkbox"/>
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-70" data-alt="Experimental mixed media installation detail with poured black resin, obsidian shards, and iridescent copper thread highlights, warm low-key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_3RFDVSp_8L-PzScGZivEz8KAsVSt_hteZfcfATw6myAw8RpDsY5uv0voRC2uWAAydowV6lGtpg0P7stgrCgrxHpSygYfqlCJ3lSTUdm9xj4DTx95Og1NxeT_3D8MiNXvFP0y4ijEfX5e2V3U1AG09X8Od6oWwZiDSbISoK9W-fGVr9rHXpBpScM_WASK4Tn55MLXwgwguViN_1s-JGp-ZS6hrPPeNVfRqO4vYmvDVeyBrFQXcXqdMg"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant text-body-md">lock</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-lg text-body-md text-on-surface-variant font-semibold truncate group-hover:text-on-surface transition-colors">Fisuras del Silencio</span>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">Resina vegetal, cobre y carbón sobre panel • 100 × 100 cm</span>
+</div>
+</div>
+<!-- Collection Info -->
+<div class="col-span-2 hidden md:flex flex-col">
+<span class="font-body-md text-body-md text-outline truncate">Nocturnalia</span>
+<span class="font-body-sm text-body-sm text-outline-variant">En Preparación</span>
+</div>
+<!-- Metrics -->
+<div class="col-span-2 hidden sm:flex flex-col items-end text-right">
+<span class="font-body-md text-body-md text-outline-variant">—</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Revisión de Textura</span>
+</div>
+<!-- Status Badge (Amber) -->
+<div class="col-span-3 sm:col-span-2 flex justify-center">
+<span class="px-space-sm py-0.5 rounded-full bg-amber-950/60 text-primary-fixed-dim font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1 shadow-inner">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Borrador
+                </span>
+</div>
+<!-- Actions -->
+<div class="col-span-2 sm:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Table Pagination & Selection Summary -->
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/90 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-outline">
+<div class="flex items-center gap-space-sm">
+<span>Mostrando <span class="text-on-surface font-semibold">1-5</span> de <span class="text-on-surface font-semibold">56</span> piezas</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary-fixed-dim cursor-pointer hover:underline font-label-md">Seleccionar todas las obras</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-body-md">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-high text-primary font-semibold text-body-sm shadow-sm">1</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors text-body-sm">2</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors text-body-sm">3</button>
+<span class="px-1 text-outline-variant">…</span>
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors text-body-sm">12</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-body-md">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Lateral Panel (Feed de Actividad + Top Tracción) (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Top Traction Masterpiece Widget -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">local_fire_department</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Mayor Tracción Curatorial</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-space-xs py-0.5 rounded">48 Horas</span>
+</div>
+<!-- Featured High Traction Card -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest group">
+<div class="h-44 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Expansive dark abstract canvas with thick impasto brushstrokes in rich charcoal, burnt umber, and subtle gold flakes, spotlit with focused gallery pin-spot, rich atmospheric depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4o596Uhqttj6JNSBs-FXFHHA70jL6r2iQNKViPi3BF0KgFdPnCQy4mSzADnvft2X5gyPgnetxESc0Ha0RznbIe42POmp_nMcGcyWFjdhNlBCdrJfRIgK-0MmEBnY4dijBeDLzF7NYZ_m-WffwAMAYl2cmZ9RYBA6eiTWirzJyHy34V0bT4jsSlGt7JP-yYV9QV4JzdgeoN3Ohzpr1LGFj1IMatYbrMjVF3oXBgrCwuZc1VOnQVoqthg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm bg-surface-container-lowest/80 backdrop-blur-md px-2 py-1 rounded text-primary font-label-caps text-label-caps uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">trending_up</span>
+                +38% Visitas
+              </div>
+</div>
+<div class="p-space-md -mt-8 relative z-10 flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cántico de Sombras I</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Colección Nocturnalia • Adquisición solicitada por Fundación Miró</span>
+<!-- Metrics Micro-Grid -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm mt-space-xs border-0">
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-caps text-[10px] text-outline uppercase">Impresiones</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">14.2K</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-caps text-[10px] text-outline uppercase">Tasa Clic</span>
+<span class="font-body-md text-body-md text-primary font-semibold">8.4%</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-caps text-[10px] text-outline uppercase">Dossiers</span>
+<span class="font-body-md text-body-md text-secondary font-semibold">24</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Activity Feed Panel -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-body-lg">notifications</span>
+<h2 class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Feed de Actividad Privada</h2>
+</div>
+<a class="font-label-caps text-label-caps text-primary hover:underline" href="#">Ver Todo</a>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Activity Item 1 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-body-md">bookmark</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="font-semibold text-on-surface">Valeria G. (Curadora)</span> guardó <span class="text-primary">Tensión y Fractura IV</span> en su selección privada.
+                </p>
+<span class="font-label-caps text-[10px] text-outline uppercase">Hace 18 minutos</span>
+</div>
+</div>
+<!-- Activity Item 2 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-body-md">mail</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Nueva solicitud de compra de print numerado para <span class="text-primary">Ecos del Vacío</span>.
+                </p>
+<span class="font-label-caps text-[10px] text-outline uppercase">Hace 1 hora • Coleccionista de Zúrich</span>
+</div>
+</div>
+<!-- Activity Item 3 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-8 h-8 rounded-full bg-emerald-950 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-body-md">verified</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Certificado de Autenticidad (COA #2024-88) sincronizado exitosamente con el registro criptográfico.
+                </p>
+<span class="font-label-caps text-[10px] text-outline uppercase">Hace 3 horas</span>
+</div>
+</div>
+<!-- Activity Item 4 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-outline flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-body-md">visibility</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Pico de visitas registrado desde <span class="font-semibold">Basel Art Fair Catalog View</span> (+310 visitas).
+                </p>
+<span class="font-label-caps text-[10px] text-outline uppercase">Ayer a las 21:40</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Studio Quick Storage Notice -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between gap-space-sm shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-sm">cloud_sync</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Copia de Seguridad RAW</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Archivos TIFF 16-bit protegidos</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline hover:text-on-surface cursor-pointer text-body-lg">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

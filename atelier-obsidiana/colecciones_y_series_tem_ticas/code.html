@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#ffddb8", "surface-container": "#1f1f23", "surface-container-high": "#2a292e", "on-primary-fixed-variant": "#604100", "outline-variant": "#504535", "surface-dim": "#131317", "on-background": "#e4e1e7", "inverse-on-surface": "#303034", "primary-fixed-dim": "#fabc4d", "surface-tint": "#fabc4d", "on-surface": "#e4e1e7", "surface-variant": "#353439", "surface": "#131317", "on-tertiary-fixed-variant": "#653e00", "secondary-container": "#62259b", "secondary-fixed": "#f0dbff", "outline": "#9d8f7c", "primary-container": "#e5a93c", "primary-fixed": "#ffdead", "on-error-container": "#ffdad6", "error-container": "#93000a", "inverse-surface": "#e4e1e7", "on-secondary-container": "#d1a1ff", "on-primary-fixed": "#281900", "secondary-fixed-dim": "#ddb8ff", "on-primary": "#432c00", "primary": "#ffc665", "tertiary": "#ffc57e", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#39393d", "tertiary-container": "#f8a111", "surface-container-highest": "#353439", "surface-container-low": "#1b1b1f", "on-secondary-fixed-variant": "#62259b", "surface-container-lowest": "#0e0e12", "secondary": "#ddb8ff", "on-primary-container": "#5e4000", "error": "#ffb4ab", "on-error": "#690005", "on-surface-variant": "#d4c4b0", "on-tertiary": "#472a00", "on-tertiary-container": "#643d00", "on-secondary": "#490081", "inverse-primary": "#7e5700", "on-secondary-fixed": "#2c0051", "on-tertiary-fixed": "#2a1700", "background": "#131317" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.75rem", "space-xl": "3rem", "margin": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-md": "3rem", "gutter-lg": "2.5rem", "space-sm": "0.5rem", "margin-lg": "5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-hero": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-20 w-full px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="galeria-publica-de-obras" href="#"><img alt="Studio Atelier Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgY4FCAVW4iICwI7nVIyAbTZRndtCvxOqWFH1GZL3bVtiQ-FSpixaWU4U6scfNEses0xMoaNvt-4CF0rp5A_F5BYJCypd5SXTPpsLhjdg99m4rL42XNdcYoYtBA7O9BDadEn29khHTFesi5xUhu9I94JoDicwewXeyuKjUiiE4d305cOv2S7_ba6tvuEt5rkffmEI7WXaMuHJ2tUwdK8FMhpgLuuPiQk2E8IWE2CKUTx6G7HBKg0utsA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-widest uppercase text-on-surface group-hover:text-primary transition-colors">Obsidian</span><span class="font-label-caps text-label-caps uppercase tracking-widest text-outline -mt-1">Atelier</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="galeria-publica-de-obras" href="#">Galería</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="colecciones-y-series-tematicas" href="#">Colecciones</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="acerca-de" href="#">Acerca de</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_0_1px_1px_rgba(255,255,255,0.06)]"><span class="material-symbols-outlined text-outline text-body-lg">search</span><input class="bg-transparent text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none w-28 md:w-44" placeholder="Buscar catálogo..." type="text"/><kbd class="font-label-caps text-label-caps bg-surface-container-high px-space-xs py-0.5 rounded text-outline-variant">⌘K</kbd></div><a class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all shadow-[0_0_1px_1px_rgba(255,255,255,0.08)]" data-path="panel-de-administracion" href="#"><span class="material-symbols-outlined text-tertiary text-body-md">tune</span><span class="font-label-caps text-label-caps uppercase tracking-widest">Modo Admin</span></a><div class="relative flex items-center"><a class="relative block group" data-path="panel-de-administracion" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline/30 group-hover:ring-primary transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTzeTkqxc8TQ0G3W--Wyho6zKzLSMXoeCTEbsuVgEfnmA2h_OzyJ5gi87UMhME-XT4PRNaetBM7pqCWS7LDiFr0EEOVKh2M8l9ZO3M5M3EfQdGKIkio50NFff3n34A2_F13gGlRZRMSjV81GFiRfjJ3vEN8_V0t3UC2y6Mc_Tx6-s_CW86CvrZItuQFBckhYQvUKTbhwTYWu8H-IBhoaRSQG4ybD7cSjkmvsRviLLtLRm03gxrUD5zw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></a></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 rounded-full bg-primary/10 blur-[130px] pointer-events-none"></div>
+<div class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-secondary-container/20 blur-[140px] pointer-events-none"></div>
+<!-- ENCABEZADO Y CONTEXTO CURATORIAL -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg pt-space-lg pb-space-xl">
+<!-- Breadcrumb Curatorial -->
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps uppercase text-outline mb-space-md">
+<span class="hover:text-primary transition-colors cursor-pointer">Archivo de Atelier</span>
+<span class="text-outline-variant">/</span>
+<span class="text-tertiary tracking-widest font-bold">Cuerpos de Obra y Series</span>
+</div>
+<!-- Main Title & Conceptual Intro -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-primary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary inline-block animate-pulse"></span>
+            Elena Valmont • Índice Curatorial
+          </span>
+<h1 class="font-headline-lg text-headline-lg lg:text-display-hero text-on-surface tracking-tight leading-tight">
+            Colecciones <span class="italic font-normal text-tertiary">&amp;</span> Series Temáticas
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mt-space-xs">
+            Exploraciones continuas articuladas en torno a la materia, la noche, la liturgia geométrica y la decadencia orgánica. Cada serie reúne obras agrupadas por afinidad técnica, temporalidad y rigor conceptual.
+          </p>
+</div>
+<!-- Curatorial Metadata Strip -->
+<div class="lg:col-span-4 flex lg:justify-end">
+<div class="bg-surface-container-low/80 backdrop-blur-md p-space-md rounded-xl shadow-xl flex flex-col sm:flex-row lg:flex-col gap-space-md w-full lg:w-auto min-w-[280px]">
+<div class="flex items-center justify-between gap-space-md">
+<span class="font-label-caps text-label-caps uppercase text-outline">Series Activas</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">6 Cuerpos</span>
+</div>
+<div class="flex items-center justify-between gap-space-md">
+<span class="font-label-caps text-label-caps uppercase text-outline">Obras Catalogadas</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">48 Piezas</span>
+</div>
+<div class="flex items-center justify-between gap-space-md">
+<span class="font-label-caps text-label-caps uppercase text-outline">Periodo Cronológico</span>
+<span class="font-body-md text-body-md text-secondary font-medium">2021 — 2024</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERIE DESTACADA EN FOCO (SPOTLIGHT CURATORIAL) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg pb-space-xl">
+<div class="relative w-full rounded-2xl bg-surface-container-lowest overflow-hidden shadow-2xl">
+<!-- Background Art Ambient Scrim -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-30" data-alt="Dark abstract oil painting with monumental vertical chiaroscuro fissures, charcoal textures, liquid gold cracks, deep obsidian tones and ambient golden dust particles in an atmospheric art gallery space" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu2jpxo8AQ-1NRFQZM_IU9IFGLB9nwXboAYifv5qfSSyCTKQdCtwTaoi08f4bcgiub_D_qqlleSx7bDqQLLAF7HmtRt3FejKT7Zcnkt36B00SxvUxhV1Xo_jbNz9V9SleacHVsJCBoSC_oEHA5-9fUbpfXMZnTZ6T3aqxBBvqUDlf69sx6aBNPMeSutX3c5ogEhwkZHOwI5fhDy-T2yhTJKi-iKlgXVoekacKPcyE92MIWITX9llEvjA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+</div>
+<div class="relative z-10 p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<!-- Spotlight Badge & Series Identifier -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 bg-primary/15 text-primary rounded-full font-label-caps text-label-caps tracking-widest uppercase">
+                Spotlight Curatorial
+              </span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">
+                Serie en Curso • 12 Piezas
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary-fixed-dim bg-surface-container-high/60 px-space-sm py-1 rounded">
+              Ciclo 2023 – 2024
+            </span>
+</div>
+<!-- Series Monumental Header & Manifest Extract -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<h2 class="font-headline-lg text-headline-lg md:text-display-hero text-on-surface">
+                Sombras <span class="text-primary italic">&amp;</span> Éter
+              </h2>
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface-variant font-normal leading-relaxed pl-space-md">
+                “El vacío no como ausencia, sino como materia densa en tensión gravitacional. Una búsqueda visceral sobre la fricción lumínica y la memoria de la penumbra.”
+              </blockquote>
+<p class="font-body-md text-body-md text-outline leading-relaxed max-w-xl">
+                Esta serie investiga la frontera donde el pigmento de hollín orgánico interactúa con veladuras de barniz ámbar, suspendiendo fragmentos suspendidos en una quietud casi litúrgica.
+              </p>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider px-space-lg py-space-sm rounded font-bold hover:shadow-[0_0_24px_rgba(229,169,60,0.35)] transition-all flex items-center gap-space-xs">
+<span>Explorar Colección Completa (12 Obras)</span>
+<span class="material-symbols-outlined text-body-md">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider px-space-lg py-space-sm rounded transition-all flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-body-md text-tertiary">menu_book</span>
+<span>Leer Ensayo Curatorial</span>
+</button>
+</div>
+</div>
+<!-- Horizontal / Mosaic Gallery of Featured Works -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Obras Clave de la Serie</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">4 / 12 Documentadas</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Mini Item 1 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monochromatic fine art oil painting of an ethereal deep abyss with golden atmospheric luminescence and dark volcanic ash textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2biCS4f7ScbUM-1xnzz0aPOF2DAi-EoZW3kfRJyCktybmfSNpRPvhZxfXol0nBdb5I-TP6bP6RK9I9q5lCo3lCJAhcyT9KkD6MndaNvDxPv-zZmPjEVca2Osg_Cwa4mPj498n1yHPsaDu2KxxU8Vk6GcXVbzCSuMAxqtND6VNdqteEbtQy8uLVfpqlhS-ilm_7L0RcgR-zY78ucJALZ6EQ_WCU4V9sAn81xG7HVIgrGO0AShVgw1bJA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">El Susurro del Abismo</span>
+<span class="font-label-caps text-label-caps text-tertiary">140 × 190 cm • 2024</span>
+</div>
+</div>
+<!-- Mini Item 2 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract kinetic sacred vortex painting in deep indigo, graphite black and glowing golden spirals on Belgian linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyJ2RpkAAg3LalYFb_u1IHvkmSypBiwq2IsgXnCd-GQMb4eDtAvWzQz8hHeBZhMbeY4e0hJhjB3mHPaiaBm6C70rf_nX6DnetuIMW1vsynGgVfnW6PGP6nZBqLWwJ7sHrcKaA0lWRKPizkX0taSK_LPz40Z_ptedu401kfMZwhgbN_Rom_JVWrFiCyfDa-giI1IjVsOi94djhRaT5qP0NGUHbKwXgUOQVJxsiKEouGgj-RRIATjzmHAQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Vórtice Sagrado</span>
+<span class="font-label-caps text-label-caps text-tertiary">160 × 160 cm • 2023</span>
+</div>
+</div>
+<!-- Mini Item 3 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Textured contemporary artwork with fragments of black pumice stone and gold leaf in an asymmetrical quiet geometric composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA85rKfTwuHIfoxMNdD_kAmLIGuRH1rp8-5K6a6f14du4B0rpjqR-okpCoHlrOyZzzlLKhJLsO_ZEXu7IHK8ssQC2dWLODS2h8voyl_IMQoyDiEEzEfUxJgPzGv0G0SRqOQkPWWwq5OY9Z04hHVelAC0GbnV2-s8elJQPZn-uU7XOKLuQ3hEtgx56CvwiKqP5fnB7IMqRZbipAfmwwjC8fybkmi1epKgB6J2H_9WcYA9Ex5HbWtn25x8A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Fragmentos de Silencio</span>
+<span class="font-label-caps text-label-caps text-tertiary">110 × 150 cm • 2023</span>
+</div>
+</div>
+<!-- Mini Item 4 -->
+<div class="group relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chiaroscuro painting of alchemical transmutation with luminous amber wisps emerging from ultra deep black void canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDul9T53F-EB3YE10G7bPLhcRGB9K2q4lpVugbMg45xcIsMZSb_y_Jb2Y7-xpdeL7UQxFdRmJYVTDaMctQBuK8NdrC4qesDYJahd7P-8bcO5bZYpw1vn5HVxES3Ih-_2cidKhW4SDXQxgcpduqmW16ECq6eOmlvIUPdiOFfRekHK4mUuMTsiv6Twk4Ki5EYBDcs83CXhHjRUHtOpMW6dfYzk8mSLlY6a3J4a-iUetPwXdDBami0mCd6lA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Transmutación del Éter</span>
+<span class="font-label-caps text-label-caps text-tertiary">180 × 220 cm • 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BARRA DE FILTROS Y ORDENACIÓN -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg pb-space-lg">
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-sm md:p-space-md rounded-xl flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md shadow-lg">
+<!-- Status Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0" id="filter-tabs">
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold tracking-wider uppercase whitespace-nowrap shadow-md">
+            Todas las Colecciones (6)
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 text-on-surface-variant hover:text-on-surface font-label-md text-label-md tracking-wider uppercase whitespace-nowrap transition-colors">
+            Series en Curso (3)
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 text-on-surface-variant hover:text-on-surface font-label-md text-label-md tracking-wider uppercase whitespace-nowrap transition-colors">
+            Ciclos Finalizados (3)
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 text-on-surface-variant hover:text-on-surface font-label-md text-label-md tracking-wider uppercase whitespace-nowrap transition-colors">
+            Monográficas
+          </button>
+</div>
+<!-- Controls: Search & Order -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<!-- Thematic Search Input -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-lg flex-1 sm:w-64">
+<span class="material-symbols-outlined text-outline text-body-md">search</span>
+<input class="bg-transparent text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none w-full" placeholder="Concepto, pigmento, año..." type="text"/>
+</div>
+<!-- Sort Select -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-body-md">sort</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer pr-space-xs">
+<option class="bg-surface-container-high text-on-surface" value="recent">Cronológico (Más reciente)</option>
+<option class="bg-surface-container-high text-on-surface" value="volume">Mayor volumen de obras</option>
+<option class="bg-surface-container-high text-on-surface" value="technique">Técnica predominante</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- CUADRÍCULA DE COLECCIONES Y SERIES (CARDS EDITORIALES INMERSIVAS) -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-lg">
+<!-- CARD 1: Nocturnalia -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<!-- Artwork Previews Triptych/Mosaic -->
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chiaroscuro nocturnal fine art painting titled Cántico de Sombras with midnight indigo and charcoal textures with delicate gilded highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX1GI5rZnEy0GG52DRgf8wMAHvDgec_03c7VTN0hjm6P3lhW9XZ-UDYB9x-DqV_rD-spQSskPJOtoiR-xCSgxAZTPXRUIs3h7Y-Df3N4FlYwu0Si2kJvQJKH8beVgftGn-LK5HMoDTL4caCrTBN9CfoyTEohgRpYII5juNyaf9DPGdAfLYRSFU-O07m6twFzGjcG6xwdpl1-jdwJ8CzdHnQeTyVYw1SqqJzdpgMT0TM85KmalibA2LiA"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract expressionist detail of dark textures and silence fissures with deep umber and amber lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJq5LaB2WH49uEFGSqz2AqMM7TRd-44lpnrjXlkUiv0cu3ourbVX1STeGUbeoUcJe0sHkW6yCl-NPn9JsE2pVqalkcXrpOA3mFP65M39YzDs6Za8dYpcnnMY0WuaV-9qxHBis_W4fpFhl2vfhlaKoxmxixy9MCFmNMkJdWY5j2uyoji7sVS2PTQPslxuDn6OM1whEeFeiipCXRvWMU_ORivjDCq4IQa4a-eH3Vci5Al4eSzsj8IWExRQ"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Atmospheric dark museum lighting highlighting subtle golden leaf textures on raw Belgian canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOfWP7UGf76kUy0jCqrvkg8owA0sUL4NGi0WlsZmA2xPriQZlgrWoZgzlBukfNOZIuVW7nlmdbbn3JnwpFktMd1jJfpI-hHwlPsS_3_fCyEpFD4NokS2Hxz9wYmSp8d2YT-rStiWgwhwuj70d8ObWHXn19c5v_hQWcy8tuerC3szwo4-2kmTFoKgQDy-qKoJHLsrB5CoXz9tQa7TkcuLHcf9NipbrrP9xuseHzMcdqQp-NMrqr6-ZbpA"/>
+</div>
+</div>
+</div>
+<!-- Metadata & Description -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">En Exhibición</span>
+<span class="font-label-caps text-label-caps text-outline">2024 • 10 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Nocturnalia
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Liturgias silenciosas en las horas crepusculares. Previews: <em>Cántico de Sombras I</em>, <em>Fisuras del Silencio</em>.
+              </p>
+</div>
+<!-- Technique Tag & Link -->
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">palette</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Óleo, grafito y pigmento sobre lino</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Salón Principal • Madrid</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: Arqueología del Vacío -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monochrome digital etching and dark atmospheric architecture titled Ecos del Vacio with mist and desolate geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyyYphQ40YoRC027Wo7B1KIcfVBJVVrjbRvoPcNwSp8cAvMhopIqN64IzvNYZ3OA_GkHIv8KOYNKdd7phAjGXkhJdckOzn4cg4X0wkdCHLjuTgZUyjaZTXRd3RjXcn17pDw1S3ZUf6uxWwhXiRTjufuQEB0keCdJneAe0COFQab96j3xxsNVnwX9SOBL62987irhVtgIWZrlPAEH4CrEd80R-TzwkRjeGjF85oGwW0sWF6rjuTxQptbA"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist fine art lithography representing misty sanctuary in charcoal grey and alabaster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoWXzfXkEbbkdyWYCIuOetkzLJMQ7RX4OBayxFpx4LIxtbh61cr8rLCoV809JLz6HglkAk2_mKDMY8CkpXvo4qTeBIXkdqx2jpU_8Eer3KPEKtFr8a2SvwBCAYvZDZPxRP5sIg5TU-7ZCly7dP5Q8xa8scGqF6BEBZ5STjVGlZBF0DNv3y-uGRW6uoiZdOMym2SEoQbvO3-VLZhEt8bKyseBP_aFRcnlEZ3rBsNFFPW4rpigwKFAJyXw"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural ruins etched into obsidian background with faint golden needle point reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA32kwd0-Q8ZpeGOSh4c8c7giuyHiG-jeIxVThQYFew3x9ItOJlZa6uSIpd6haOVcUBY7wqBdw4V34z7UeB9sZzEPz0nX7poZ5cKelBKrU1m3XhuXLm6ADsAlj-ncKyZpEzp17-pKmZt1VAmjUyu_pM_fDkbDJ8dSIAeJOxultcj1d_JYZMBj1atH7nkWFdIDGrO3KZEgnYgNyUF3KqpFyHTCLECNtGXW1IjFQ_iqEvUNkHcwbGHOH--Q"/>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-widest">Ciclo Completado</span>
+<span class="font-label-caps text-label-caps text-outline">2022–2023 • 8 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Arqueología del Vacío
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Cartografías de espacios residuales y memoria geológica. Incluye <em>Ecos del Vacío</em> y <em>Santuario de la Niebla</em>.
+              </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">fingerprint</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Aguafuerte digital y monocromo puro</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline">Colección Institucional</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 3: Estructuras Primigenias -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dense carbon compressed relief painting with mineral resins and tectonic fracture line filled with molten gold accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEvfc2Cs4IINZ3DHEYWpRwwKPzTNZHaADYYkoFHp6BG4ZpXBVpk99TDEo7GV7Tuy_qFFTogv0TSijN_SEMIxT85XTgRShyCTJhr3RTB8hOxy2KbN-gHn-jHGTlr-Ynj1ENu8JlRivWaP48M7musdCXMAlZH2IgwmNrk5-yXSe6swKh532zN5WGONjWbzsNOuilxn9gfAWhhfX13S0ERbcI9510h2K8JrWxI4fJ5IKZPdkhKTAvXlOCgA"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro texture of pressed charcoal, basalt dust and crystal inclusions in deep black shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqAx05t4wcrgABxybunCkRNn3NevIiyq55Wq9xnKhRE4lD5A0pE-LvfAlKQ6UwrGU8ZPOBN7mgY_AUKs0qKQlFOZ3awr0srB50A0hXFq9GFZoXVKZfXFc_YK3ezBZvcvvsmp-srToPi1zYiYUfHcImsq12sBEjLt7x1scOO5mjtNO_ra80cmEa26VI5ID2wRDfQ8xZ_RQS11nteMXqj2dVDnpzZ9ISlk4bmMfUgplGzVXvOsNKp_epBg"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sculptural canvas titled Relic of Feather and Ash with tactile volcanic mineral finishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4M6a_P-Q4YAnj4DFYzcrBNq8TJLcKMisMFqvYVhr2xNZAEwv9Dmihyom3EuQeCJqY0IA66SIG6lgdPQIDGF3iizB4efSzXBcALuJ68fIyZiIW6KwykPE_odsoJYbxrEPSI92m5RrH9IjPJqijxgqE7RIOvuYkzrDocnWcYG2jmU24raNRA7VEOfXMwrgoYU_3qCqKT9nTNtN445B-OvsFYXus6WxUJ3YuXbR8PrVV0X8NwwIxIZi4Ng"/>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">En Reserva</span>
+<span class="font-label-caps text-label-caps text-outline">2023 • 7 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Estructuras Primigenias
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Fuerzas tectónicas y densidades primordiales. Obras clave: <em>Tensión y Fractura IV</em> y <em>Reliquia de Pluma y Ceniza</em>.
+              </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">handyman</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Carbón prensado y resinas minerales</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline">4 Adquiridas • 3 Disp.</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 4: Mitologías Umbrías & Arquetipos -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Atmospheric mythological concept art painting of a shadowy royal regent figure with 24k gold leaf insignia and dramatic chiaroscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKN-QVCUB7lPRolQh2G66ryp5cw0rdXdkloognqX0StNP58bk3cILNlWP7aDZMXGcoeo33lOzEsvb03chi1r17bp98UUFlsq5l9LDU4y1IxrmvrwsZ3z0I0qJj5CVYw84YK2UOE-l94VJsbfRxTzCZMGezypIDjjlXXHlKc6uKa9ngGUIP5I9m0R_rc0kt1AS46otbVa5L8xhIkHzWOAV9odEWSz2TanxCadDr8lqOJS4TzH5eiR-VMw"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Avatar of the Silent Eclipse with glowing halo and nocturnal dark aesthetic portraiture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbhsuQVNVHUrC6s1nkuz9GNp1m8I9Ay4rLWBCRGW5s0i8H36BZgawMYgetZyNv2kxdS4xi5vVBl2xgBeyuFoKsaJ6qwiLDkqZSAnGy7Hy_PiXelgz2iCU5GJYCRcxrzduEwCSao3OPE4m3A4oBIFmced61dKKswBa0jtSJu0rGgQ-ygIwcV8NJKay6e285WS5Sm5WcewHVGIPIxw78V_MSD3MykhpBO5zKt5Zq3cFYeCfvhts1x6-Wqg"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intricate golden heraldic geometry painted over dark matte obsidian stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCkGIEgsZRQ3IsYPcLB2p_fgX9915623rlQAHDVkRMCrvS6crL1LXuJIS887eVewf-aYI3W2mZYwqnNmvmsEegnxeIqu99NpTdYxQqmHBIgX8nrsGthtUDjEuy7S4gQbCTyH18EMx92R_tVU3CQVIRqW9OE0qd4qceDljRliaJDWn7_a64bykf1JmQWl-gw5GEVidOmvhlXLlFoGy48pP12bnSI-AvAacXqJ-DftQRdW8bDsJN7RWNSA"/>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-widest">Colección Cerrada</span>
+<span class="font-label-caps text-label-caps text-outline">2021–2022 • 6 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Mitologías Umbrías &amp; Arquetipos
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Iconografía de deidades silentes y entidades heráldicas. Destacan <em>Regente del Estandarte</em> y <em>Avatar del Eclipse Silente</em>.
+              </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">brush</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Concept art, grafito y pan de oro 24k</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline">Fondos Privados</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 5: Materia Inerte & Esculturas Cinéticas -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monolithic basalt kinetic sculpture illuminated by warm raking gallery light inside an intimate dark studio showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnwgHKGIWjmY25V6hAH9HRsWZbidGkL7KPjfPiwENQDl5jzkJFQ84ibwUEgPN42yt3hbA7bdl1dTvVO7AEC0Avt_GRIK5NLDeSceyhN989VfPG4fyiHLuBEQhkof4a5AYazzmEvlbOqSdMY-2XRUDb1rD8jf0PmYDkyJIRdoiN8k_E5y2ax9tzna6d7XxYvMi7yCslENmVeRw3w6HrGwUgS3MyweEpEUdRkTRjjnOLfYidYajXnIHpUA"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sculpture detail of carved volcanic basalt and polished bronze pendulum element" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiH413krOHnuyAxeLHsGV6u7mt9NVQchaSW5QwfcCptWZUnK6MbZhGgbkScEMmK2YCM8cMMlX4s7ocGERcY8s4ZJ5x6J05tc_hmeD31yFzNWyxgtpUsGiUAPfiFwR_bSWwuDyBUNP-jyJR9MbbqqlGEwzM2L33oXb1S7eRJpgLCOGhSwcvQdgvwwxhewukPOpYMkmFachLxYp2w6dzvwETrYmwn8A883CEnqPQgiJ9VoC86UvSczwtQ"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Kinetic art mobile in dark matte blackened titanium with subtle warm amber reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6jlAT9hhz5EvKnZSKVjPtORfZyvxGIdSoG4ux3dQGvAEhAnBy5ldS0PP6NNxuf63CtQ_ZbzckYZCRbZ5DzGC9GU42Za3ihGgapDsi8dRobA9HdlKKmizCOYPn2G5FyoU4fS0VEwupwjL3lvwDrLLmJo8-KUpqovankTsxCwsa7HQAgFpf1_IWTO8-ilZOziPvR6SBO6jMWruE05xYReJjrzHxAQN1neAR3rMATBV68rW_Y-1I3W-zmQ"/>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+                  En Taller
+                </span>
+<span class="font-label-caps text-label-caps text-outline">2024 • 5 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Materia Inerte &amp; Esculturas
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Tridimensionalidad lítica y rotación gravitacional. Piezas concebidas para interactuar con la luz rasante de sala.
+              </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">view_in_ar</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Escultura en basalto, bronce y luz rasante</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-primary">Visitas con Cita</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 6: Crónicas de la Niebla y el Carbón -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_12px_40px_-10px_rgba(229,169,60,0.18)] transition-all duration-300">
+<div class="grid grid-cols-3 gap-1 p-2 bg-surface-container-lowest">
+<div class="col-span-2 h-56 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hyper-textured digital volumetric painting of misty valleys and charred forest ruins in deep charcoal and subtle amber sunbreak" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl4hi4xf4l7IaQ7i1WIlGT7trrMCEhJxDutkHQ0_QTMqSS_ulfN7L_wATMhAEoxsSvhXPJZcLmDqfHxqHZkGa_LJKs-hJViNsxy2EJaO1dYRHLiV_U7bvYJm1fboKScxHd0WtyMsu33-tR7b1TbUTAjXfRuX1XzRlrrjDUKugiCbniBNH-HyjNpQvn6tRN4aVjLDnZhVBT2wRqZVlnt_rgLZhlhlJ1jHiA3gi9TOibQkxbLd6PGkRuiw"/>
+</div>
+<div class="flex flex-col gap-1 h-56">
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Volumetric carbon smoke study with warm glowing embers painted on raw dark substrate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANoFBD7IEFNwP6dXrdTMsjvjZY0uKMYtPTA7gi0yaNsvBP0XvZX3jZF_GeWCo7zhH4J7F7CS2PSZZodmc5c8eKS58FVrCJrffUaNi3x6Cn-DSiZ7-mc7fWs7DBj9bEaTtYv6d-TjTrXOkP1i2ybaBrZhSrVBMw1AS3W3nSqyWMIv2eBuFJ3-6eWNqHlffCFdxI09aRcFf0BFggf4QLKN5EddxsDkiXQ97z8kPrxu1sBJJB5ilTXMdS6Q"/>
+</div>
+<div class="h-1/2 rounded overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of impasto oil and ash textures revealing atmospheric landscape depths" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1SjhcwLB7-LJzi6L8iBVHejXH37Oou_IT6bgINJNVAb2C9-Qbsdrp_v0yvgAC05IlafDuLrsETS1KSivOCdbAxKBeSSLeWpgmuQ0l0NR2SmcD0Ta-C7umXck16v7cFBbFGywfAnfg5mEP0AsncjA8c9ps8oRjHvn9w5-BKvz26pl3K1FcLKmMyw3Bk7C9y56XWcBTwt40Ro6f2xiA2XD9rH0sSJQKal9NCaUQO-cdliTPlc_k1GaDw"/>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-widest">Archivo Histórico</span>
+<span class="font-label-caps text-label-caps text-outline">2023 • 10 Obras</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Crónicas de la Niebla y el Carbón
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Tratado poético sobre la disolución visual y la condensación vaporosa de cenizas orgánicas y pigmentos minerales.
+              </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-sm bg-surface-container-lowest/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-body-sm">layers</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Pintura digital volumétrica e hipertexturas</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline">Catálogo Razonado</span>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+<span>Ver Serie</span>
+<span class="material-symbols-outlined text-body-md">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOQUE DE COMISIÓN O ADQUISICIÓN DE SERIES COMPLETAS -->
+<section class="w-full px-margin md:px-margin-md lg:px-margin-lg pb-space-xl">
+<div class="relative rounded-2xl bg-gradient-to-br from-surface-container to-surface-container-lowest p-space-lg md:p-space-xl overflow-hidden shadow-2xl">
+<!-- Visual Accent Graphic -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 pointer-events-none flex items-center justify-center">
+<svg class="w-96 h-96 text-primary" fill="currentColor" viewbox="0 0 200 200">
+<path d="M100 0 L130 70 L200 100 L130 130 L100 200 L70 130 L0 100 L70 70 Z"></path>
+</svg>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps uppercase text-primary">
+<span class="material-symbols-outlined text-body-md">verified</span>
+<span>Servicio Curatorial Institucional</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+              Itinerancia &amp; Adquisición de Cuerpos de Obra
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+              Atelier Obsidian asiste a directores de museos, comisarios de bienales y coleccionistas privados en la adquisición integral de series monográficas. Cada cuerpo de obra se entrega con dossier museográfico, memoria conceptual firmada y certificados criptográficos COA con trazabilidad inmutable.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">description</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">Dossier de Sala</h4>
+<p class="font-body-sm text-body-sm text-outline">Textos de sala y guía de montaje técnico.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">token</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">COA Criptográfico</h4>
+<p class="font-body-sm text-body-sm text-outline">Registro físico y digital en protocolo seguro.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">flight_takeoff</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">Itinerancia</h4>
+<p class="font-body-sm text-body-sm text-outline">Embalaje museal y coordinación aduanera.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="bg-surface-container-high/60 backdrop-blur-md p-space-md rounded-xl flex flex-col gap-space-md">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Solicitud de Consulta Privada</span>
+<p class="font-body-sm text-body-sm text-outline">Concierte una reunión presencial en el atelier o una sesión curatorial telemática.</p>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider py-space-sm rounded font-bold hover:shadow-[0_0_20px_rgba(229,169,60,0.35)] transition-all">
+                Contactar Dirección Artística
+              </button>
+<button class="w-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider py-space-sm rounded transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-body-md">download</span>
+<span>Descargar Catálogo Resumido (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interaction for filter tab switching
+  document.querySelectorAll('#filter-tabs button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('#filter-tabs button').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-md');
+        btn.classList.add('bg-surface-container-high/60', 'text-on-surface-variant');
+      });
+      button.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-md');
+      button.classList.remove('bg-surface-container-high/60', 'text-on-surface-variant');
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="w-full px-margin md:px-margin-md lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-lg pb-space-lg"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Studio Atelier Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgY4FCAVW4iICwI7nVIyAbTZRndtCvxOqWFH1GZL3bVtiQ-FSpixaWU4U6scfNEses0xMoaNvt-4CF0rp5A_F5BYJCypd5SXTPpsLhjdg99m4rL42XNdcYoYtBA7O9BDadEn29khHTFesi5xUhu9I94JoDicwewXeyuKjUiiE4d305cOv2S7_ba6tvuEt5rkffmEI7WXaMuHJ2tUwdK8FMhpgLuuPiQk2E8IWE2CKUTx6G7HBKg0utsA"/><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface">Atelier Obsidian</span></div><p class="font-body-md text-body-md text-outline max-w-sm">Espacio privado y curaduría de arte contemporáneo, escultura y piezas cinéticas de alta distinción.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Archivo &amp; Salón</span><a class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors" data-path="galeria-publica-de-obras" href="#">Galería Pública</a><a class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors" data-path="colecciones-y-series-tematicas" href="#">Colecciones Privadas</a><a class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors" href="#">Consultas Curatoriales</a><a class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors" href="#">Certificados de Autenticidad</a></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Invitaciones a Exposiciones</span><p class="font-body-sm text-body-sm text-outline">Reciba correspondencia privada previa a cada apertura de salón.</p><div class="flex items-center gap-space-xs"><input class="bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm px-space-md py-space-xs rounded flex-1 focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_0_1px_1px_rgba(255,255,255,0.06)]" placeholder="correo@coleccionista.art" type="email"/><button class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded uppercase tracking-wider font-semibold hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors">Unirse</button></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md text-outline"><span class="font-body-sm text-body-sm">© 2025 Atelier Obsidian. Todos los derechos reservados.</span><div class="flex items-center gap-space-lg"><a class="font-label-caps text-label-caps uppercase tracking-widest text-outline hover:text-on-surface transition-colors" href="#">Instagram</a><a class="font-label-caps text-label-caps uppercase tracking-widest text-outline hover:text-on-surface transition-colors" href="#">ArtStation</a><a class="font-label-caps text-label-caps uppercase tracking-widest text-outline hover:text-on-surface transition-colors" href="#">Behance</a></div></div></div></footer></body></html>
